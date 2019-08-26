@@ -65,6 +65,7 @@ INSTALLED_APPS = [
 
     # 'haystack',
     'django_crontab',  # 定时任务
+    'meiduo_admin.apps.MeiduoAdminConfig' # 后台管理
 ]
 
 MIDDLEWARE = [
