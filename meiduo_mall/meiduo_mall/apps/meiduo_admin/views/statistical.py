@@ -12,6 +12,8 @@ import datetime
 # from datetime import timedelta
 from rest_framework.permissions import IsAdminUser
 from orders.models import OrderInfo
+from goods.models import GoodsVisitCount
+from ..serializers.statistical import GoodsSerializer
 
 
 class UserTotalCountView(APIView):
@@ -124,5 +126,27 @@ class UserMonthCountView(APIView):
                 'count':count,
                 'date':index_date
             })
+
         # 4.返回结果
         return Response(date_list)
+
+
+class UserGoodCountView(APIView):
+    """
+    日分类商品访问数量
+    """
+    # 指定管理员权限
+    permission_classes = [IsAdminUser]
+
+    def get(self, request):
+        # 获取当前时间
+        date = datetime.date.today()  # 2018-01-17
+
+        # 获取分类访问量数量
+        goods = GoodsVisitCount.objects.filter(date__gte=date)
+
+        # 交给序列化器序列化
+        ser = GoodsSerializer(goods, many=True)
+
+        # 返回结果
+        return Response(ser.data)
