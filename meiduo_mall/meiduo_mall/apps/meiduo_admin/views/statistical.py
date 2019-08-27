@@ -9,8 +9,10 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from users.models import User
 import datetime
+# from datetime import timedelta
 from rest_framework.permissions import IsAdminUser
 from orders.models import OrderInfo
+
 
 class UserTotalCountView(APIView):
     """
@@ -20,7 +22,6 @@ class UserTotalCountView(APIView):
     permission_classes = [IsAdminUser]
 
     def get(self, request):
-
         # 获取当前时间
         date = datetime.date.today()  # 2018-01-17
 
@@ -29,8 +30,8 @@ class UserTotalCountView(APIView):
 
         # 返回结果
         return Response({
-            'count':count,
-            'date':date
+            'count': count,
+            'date': date
         })
 
 
@@ -42,7 +43,6 @@ class UsercurrentCountView(APIView):
     permission_classes = [IsAdminUser]
 
     def get(self, request):
-
         # 获取当前时间
         date = datetime.date.today()  # 2018-01-17
 
@@ -51,9 +51,10 @@ class UsercurrentCountView(APIView):
 
         # 返回结果
         return Response({
-            'count':count,
-            'date':date
+            'count': count,
+            'date': date
         })
+
 
 class UseractiveCountView(APIView):
     """
@@ -63,7 +64,6 @@ class UseractiveCountView(APIView):
     permission_classes = [IsAdminUser]
 
     def get(self, request):
-
         # 获取当前时间
         date = datetime.date.today()  # 2018-01-17
 
@@ -72,8 +72,8 @@ class UseractiveCountView(APIView):
 
         # 返回结果
         return Response({
-            'count':count,
-            'date':date
+            'count': count,
+            'date': date
         })
 
 
@@ -85,15 +85,44 @@ class UserordersCountView(APIView):
     permission_classes = [IsAdminUser]
 
     def get(self, request):
-
         # 获取当前时间
         date = datetime.date.today()  # 2018-01-17
 
         # 获取用户数量
-        count = User.objects.filter(orders__create_time__gte=date).count()
+        count = len(set(User.objects.filter(orders__create_time__gte=date)))
 
         # 返回结果
         return Response({
-            'count':count,
-            'date':date
+            'count': count,
+            'date': date
         })
+
+
+class UserMonthCountView(APIView):
+    """
+     月增用户统计
+    """
+    # 指定管理员权限
+    permission_classes = [IsAdminUser]
+
+    def get(self, request):
+        # 获取当前时间
+        now_date = datetime.date.today()  # 2018-01-17
+
+        # 获取一个月之前的时间
+        begin_date = now_date - datetime.timedelta(days=29)
+
+        # 3.从一个月之前的日期开始遍历循环获取每一天的数据
+        date_list = []
+        for i in range(30):
+            # 起始日期
+            index_date = begin_date + datetime.timedelta(days=i)
+            # 下一天日期(起始日期的第二天)
+            next_date = begin_date + datetime.timedelta(days=i + 1)
+            count = User.objects.filter(date_joined__gte=index_date, date_joined__lt=next_date).count()
+            date_list.append({
+                'count':count,
+                'date':index_date
+            })
+        # 4.返回结果
+        return Response(date_list)
