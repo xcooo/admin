@@ -8,4 +8,6 @@ urlpatterns = [
     #------------------------ 总量统计 ---------------------------------
     #  用户总量统计
     url(r'^statistical/total_count/$',statistical.UserTotalCountView.as_view()),
+    #  日增用户统计
+    url(r'^statistical/day_increment/$',statistical.UsercurrentCountView.as_view()),
 ]
