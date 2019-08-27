@@ -332,7 +332,7 @@ CORS_ALLOW_CREDENTIALS = True  # 允许携带cookie
 REST_FRAMEWORK = {
 	# 指定认证形式
     'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
+        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',  # JWT认证
         'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.BasicAuthentication',
     ),
