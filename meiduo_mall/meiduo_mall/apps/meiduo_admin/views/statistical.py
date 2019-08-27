@@ -10,6 +10,7 @@ from rest_framework.response import Response
 from users.models import User
 import datetime
 from rest_framework.permissions import IsAdminUser
+from orders.models import OrderInfo
 
 class UserTotalCountView(APIView):
     """
@@ -68,6 +69,28 @@ class UseractiveCountView(APIView):
 
         # 获取用户数量
         count = User.objects.filter(last_login__gte=date).count()
+
+        # 返回结果
+        return Response({
+            'count':count,
+            'date':date
+        })
+
+
+class UserordersCountView(APIView):
+    """
+    日下单用户统计
+    """
+    # 指定管理员权限
+    permission_classes = [IsAdminUser]
+
+    def get(self, request):
+
+        # 获取当前时间
+        date = datetime.date.today()  # 2018-01-17
+
+        # 获取用户数量
+        count = User.objects.filter(orders__create_time__gte=date).count()
 
         # 返回结果
         return Response({

@@ -15532,3 +15532,136 @@ INFO 2019-08-27 09:26:28,276 basehttp 124 "GET /meiduo_admin/statistical/day_act
 WARNING 2019-08-27 09:26:28,307 base 152 Not Found: /meiduo_admin/statistical/day_orders/
 WARNING 2019-08-27 09:26:28,308 basehttp 124 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 404 8984
 INFO 2019-08-27 09:26:28,317 basehttp 124 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+ERROR 2019-08-27 09:44:57,812 exception 135 Internal Server Error: /meiduo_admin/statistical/day_orders/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/admin/meiduo_mall/meiduo_mall/apps/meiduo_admin/views/statistical.py", line 93, in get
+    count = User.objects.filter(orderinfo__create_time__gte=date)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/query.py", line 784, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/query.py", line 802, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1276, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1154, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1034, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1352, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'orderinfo' into field. Choices are: adresses, date_joined, default_address, default_address_id, email, email_active, first_name, groups, id, is_active, is_staff, is_superuser, last_login, last_name, logentry, mobile, oauthqquser, orders, password, user_permissions, username
+ERROR 2019-08-27 09:44:58,138 basehttp 124 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 500 22592
+ERROR 2019-08-27 09:48:37,604 exception 135 Internal Server Error: /meiduo_admin/statistical/day_orders/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/admin/meiduo_mall/meiduo_mall/apps/meiduo_admin/views/statistical.py", line 93, in get
+    count = User.objects.filter(orderinfo__create_time__gte=date).count()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/query.py", line 784, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/query.py", line 802, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1276, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1154, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1034, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1352, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'orderinfo' into field. Choices are: adresses, date_joined, default_address, default_address_id, email, email_active, first_name, groups, id, is_active, is_staff, is_superuser, last_login, last_name, logentry, mobile, oauthqquser, orders, password, user_permissions, username
+ERROR 2019-08-27 09:48:37,680 basehttp 124 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 500 22600
+ERROR 2019-08-27 09:48:37,884 exception 135 Internal Server Error: /meiduo_admin/statistical/day_orders/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/admin/meiduo_mall/meiduo_mall/apps/meiduo_admin/views/statistical.py", line 93, in get
+    count = User.objects.filter(orderinfo__create_time__gte=date).count()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/query.py", line 784, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/query.py", line 802, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1250, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1276, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1154, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1034, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/query.py", line 1352, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+django.core.exceptions.FieldError: Cannot resolve keyword 'orderinfo' into field. Choices are: adresses, date_joined, default_address, default_address_id, email, email_active, first_name, groups, id, is_active, is_staff, is_superuser, last_login, last_name, logentry, mobile, oauthqquser, orders, password, user_permissions, username
+ERROR 2019-08-27 09:48:37,971 basehttp 124 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 500 22600
+INFO 2019-08-27 09:49:00,483 basehttp 124 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2019-08-27 10:00:21,480 basehttp 124 "OPTIONS /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 0
+INFO 2019-08-27 10:00:21,496 basehttp 124 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2019-08-27 10:00:21,498 basehttp 124 "OPTIONS /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 0
+INFO 2019-08-27 10:00:21,515 basehttp 124 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2019-08-27 10:00:21,517 basehttp 124 "OPTIONS /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 0
+INFO 2019-08-27 10:00:21,535 basehttp 124 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2019-08-27 10:00:21,544 basehttp 124 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2019-08-27 10:00:21,558 basehttp 124 "OPTIONS /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 0
+INFO 2019-08-27 10:00:21,747 basehttp 124 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 32
+INFO 2019-08-27 10:00:21,807 basehttp 124 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2019-08-27 10:00:21,840 basehttp 124 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+WARNING 2019-08-27 10:00:21,857 base 152 Not Found: /meiduo_admin/statistical/goods_day_views/
+WARNING 2019-08-27 10:00:21,871 base 152 Not Found: /meiduo_admin/statistical/month_increment/
+INFO 2019-08-27 10:00:21,873 basehttp 124 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 31
+WARNING 2019-08-27 10:00:21,877 basehttp 124 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 404 9185
+INFO 2019-08-27 10:00:21,889 basehttp 124 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+WARNING 2019-08-27 10:00:21,892 basehttp 124 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 404 9185
+INFO 2019-08-27 10:00:21,901 basehttp 124 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
