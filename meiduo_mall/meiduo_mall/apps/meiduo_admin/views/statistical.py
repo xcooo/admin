@@ -53,3 +53,24 @@ class UsercurrentCountView(APIView):
             'count':count,
             'date':date
         })
+
+class UseractiveCountView(APIView):
+    """
+    日活跃用户统计
+    """
+    # 指定管理员权限
+    permission_classes = [IsAdminUser]
+
+    def get(self, request):
+
+        # 获取当前时间
+        date = datetime.date.today()  # 2018-01-17
+
+        # 获取用户数量
+        count = User.objects.filter(last_login__gte=date).count()
+
+        # 返回结果
+        return Response({
+            'count':count,
+            'date':date
+        })
