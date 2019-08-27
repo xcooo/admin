@@ -15236,3 +15236,119 @@ WARNING 2019-08-26 08:19:32,304 base 152 Not Found: /orders/info/1/user_center_i
 WARNING 2019-08-26 08:19:32,305 basehttp 124 "GET /orders/info/1/user_center_info.html HTTP/1.1" 404 8241
 WARNING 2019-08-26 08:19:36,809 base 152 Not Found: /orders/info/1/user_center_pass.html
 WARNING 2019-08-26 08:19:36,809 basehttp 124 "GET /orders/info/1/user_center_pass.html HTTP/1.1" 404 8241
+WARNING 2019-08-27 02:03:02,625 basehttp 124 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 73
+INFO 2019-08-27 02:04:43,977 basehttp 124 "POST /meiduo_admin/authorizations/ HTTP/1.1" 200 197
+INFO 2019-08-27 04:44:52,036 basehttp 124 "POST /meiduo_admin/authorizations/ HTTP/1.1" 200 224
+INFO 2019-08-27 05:49:50,222 basehttp 124 "GET / HTTP/1.1" 200 126009
+INFO 2019-08-27 05:49:50,309 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 304 0
+INFO 2019-08-27 05:49:50,313 basehttp 124 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2019-08-27 05:49:50,320 basehttp 124 "GET /static/css/main.css HTTP/1.1" 304 0
+INFO 2019-08-27 05:49:50,322 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2019-08-27 05:49:50,324 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2019-08-27 05:49:50,327 basehttp 124 "GET /static/js/jquery-1.12.4.min.js HTTP/1.1" 304 0
+INFO 2019-08-27 05:49:50,341 basehttp 124 "GET /static/js/slide.js HTTP/1.1" 304 0
+INFO 2019-08-27 05:49:50,347 basehttp 124 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2019-08-27 05:49:50,351 basehttp 124 "GET /static/js/index.js HTTP/1.1" 304 0
+INFO 2019-08-27 05:49:50,380 basehttp 124 "GET /static/images/logo.png HTTP/1.1" 304 0
+INFO 2019-08-27 05:49:50,487 basehttp 124 "GET /static/images/icons.png HTTP/1.1" 304 0
+INFO 2019-08-27 05:49:50,958 basehttp 124 "GET /carts/simple/ HTTP/1.1" 200 46
+WARNING 2019-08-27 05:49:51,082 base 152 Not Found: /favicon.ico
+WARNING 2019-08-27 05:49:51,084 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 8283
+INFO 2019-08-27 05:50:31,324 basehttp 124 "GET / HTTP/1.1" 200 126009
+INFO 2019-08-27 05:50:31,930 basehttp 124 "GET /carts/simple/ HTTP/1.1" 200 46
+INFO 2019-08-27 05:50:33,096 basehttp 124 "GET /logout/ HTTP/1.1" 302 0
+INFO 2019-08-27 05:50:33,207 basehttp 124 "GET /login/ HTTP/1.1" 200 3605
+INFO 2019-08-27 05:50:33,220 basehttp 124 "GET /static/js/login.js HTTP/1.1" 304 0
+INFO 2019-08-27 05:50:33,221 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 304 0
+INFO 2019-08-27 05:50:33,230 basehttp 124 "GET /static/images/login_banner.png HTTP/1.1" 304 0
+INFO 2019-08-27 05:50:33,242 basehttp 124 "GET /static/images/icons02.png HTTP/1.1" 304 0
+INFO 2019-08-27 05:50:33,250 basehttp 124 "GET /static/images/QQ-weixin.png HTTP/1.1" 304 0
+WARNING 2019-08-27 05:52:16,325 base 152 Not Found: /meiduo_admin
+WARNING 2019-08-27 05:52:16,327 basehttp 124 "GET /meiduo_admin HTTP/1.1" 404 8286
+WARNING 2019-08-27 06:04:46,259 basehttp 124 "POST /meiduo_admin/authorizations/ HTTP/1.1" 400 68
+INFO 2019-08-27 06:16:33,585 basehttp 124 "POST /meiduo_admin/authorizations/ HTTP/1.1" 200 209
+INFO 2019-08-27 06:43:43,826 basehttp 124 "GET /login/ HTTP/1.1" 200 3605
+INFO 2019-08-27 06:43:43,836 basehttp 124 "GET /static/js/host.js HTTP/1.1" 304 0
+INFO 2019-08-27 06:43:43,837 basehttp 124 "GET /static/js/vue-2.5.16.js HTTP/1.1" 304 0
+INFO 2019-08-27 06:43:43,841 basehttp 124 "GET /static/css/reset.css HTTP/1.1" 304 0
+INFO 2019-08-27 06:43:43,843 basehttp 124 "GET /static/js/axios-0.18.0.min.js HTTP/1.1" 304 0
+INFO 2019-08-27 06:43:43,845 basehttp 124 "GET /static/css/main.css HTTP/1.1" 304 0
+INFO 2019-08-27 06:43:43,856 basehttp 124 "GET /static/images/logo02.png HTTP/1.1" 304 0
+INFO 2019-08-27 06:43:43,870 basehttp 124 "GET /static/js/common.js HTTP/1.1" 304 0
+INFO 2019-08-27 06:43:43,872 basehttp 124 "GET /static/js/login.js HTTP/1.1" 304 0
+INFO 2019-08-27 06:57:29,685 basehttp 124 "OPTIONS /meiduo_admin/authorizations/ HTTP/1.1" 200 0
+INFO 2019-08-27 06:57:34,645 basehttp 124 "OPTIONS /meiduo_admin/authorizations/ HTTP/1.1" 200 0
+INFO 2019-08-27 06:57:42,804 basehttp 124 "OPTIONS /meiduo_admin/authorizations/ HTTP/1.1" 200 0
+INFO 2019-08-27 06:58:52,149 basehttp 124 "OPTIONS /meiduo_admin/authorizations/ HTTP/1.1" 200 0
+INFO 2019-08-27 06:58:53,210 basehttp 124 "OPTIONS /meiduo_admin/authorizations/ HTTP/1.1" 200 0
+INFO 2019-08-27 06:58:53,566 basehttp 124 "OPTIONS /meiduo_admin/authorizations/ HTTP/1.1" 200 0
+INFO 2019-08-27 06:58:53,803 basehttp 124 "OPTIONS /meiduo_admin/authorizations/ HTTP/1.1" 200 0
+INFO 2019-08-27 06:59:15,844 basehttp 124 "OPTIONS /meiduo_admin/authorizations/ HTTP/1.1" 200 0
+INFO 2019-08-27 06:59:58,977 basehttp 124 "OPTIONS /meiduo_admin/authorizations/ HTTP/1.1" 200 0
+INFO 2019-08-27 07:00:14,215 basehttp 124 "OPTIONS /meiduo_admin/authorizations/ HTTP/1.1" 200 0
+INFO 2019-08-27 07:00:14,881 basehttp 124 "OPTIONS /meiduo_admin/authorizations/ HTTP/1.1" 200 0
+INFO 2019-08-27 07:00:15,325 basehttp 124 "OPTIONS /meiduo_admin/authorizations/ HTTP/1.1" 200 0
+INFO 2019-08-27 07:00:15,567 basehttp 124 "OPTIONS /meiduo_admin/authorizations/ HTTP/1.1" 200 0
+INFO 2019-08-27 07:00:30,012 basehttp 124 "OPTIONS /meiduo_admin/authorizations/ HTTP/1.1" 200 0
+INFO 2019-08-27 07:00:59,561 basehttp 124 "OPTIONS /meiduo_admin/authorizations/ HTTP/1.1" 200 0
+INFO 2019-08-27 07:00:59,613 basehttp 124 "POST /meiduo_admin/authorizations/ HTTP/1.1" 200 209
+INFO 2019-08-27 07:00:59,793 basehttp 124 "OPTIONS /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 0
+INFO 2019-08-27 07:00:59,807 basehttp 124 "OPTIONS /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 0
+INFO 2019-08-27 07:00:59,812 basehttp 124 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2019-08-27 07:00:59,814 basehttp 124 "OPTIONS /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 0
+INFO 2019-08-27 07:00:59,817 basehttp 124 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2019-08-27 07:00:59,819 basehttp 124 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2019-08-27 07:00:59,819 basehttp 124 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2019-08-27 07:00:59,822 basehttp 124 "OPTIONS /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 0
+WARNING 2019-08-27 07:00:59,828 base 152 Not Found: /meiduo_admin/statistical/total_count/
+WARNING 2019-08-27 07:00:59,828 basehttp 124 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 404 8425
+WARNING 2019-08-27 07:00:59,833 base 152 Not Found: /meiduo_admin/statistical/day_increment/
+WARNING 2019-08-27 07:00:59,839 base 152 Not Found: /meiduo_admin/statistical/day_active/
+WARNING 2019-08-27 07:00:59,842 basehttp 124 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 404 8431
+WARNING 2019-08-27 07:00:59,856 base 152 Not Found: /meiduo_admin/statistical/day_orders/
+WARNING 2019-08-27 07:00:59,882 base 152 Not Found: /meiduo_admin/statistical/goods_day_views/
+WARNING 2019-08-27 07:00:59,886 basehttp 124 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 404 8437
+WARNING 2019-08-27 07:00:59,886 basehttp 124 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 404 8422
+WARNING 2019-08-27 07:00:59,886 basehttp 124 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 404 8422
+WARNING 2019-08-27 07:00:59,885 base 152 Not Found: /meiduo_admin/statistical/month_increment/
+WARNING 2019-08-27 07:00:59,895 basehttp 124 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 404 8437
+WARNING 2019-08-27 07:00:59,907 base 152 Not Found: /meiduo_admin/statistical/day_orders/
+WARNING 2019-08-27 07:00:59,913 basehttp 124 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 404 8422
+WARNING 2019-08-27 07:00:59,918 base 152 Not Found: /meiduo_admin/statistical/day_active/
+WARNING 2019-08-27 07:00:59,920 basehttp 124 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 404 8422
+INFO 2019-08-27 07:02:22,372 basehttp 124 "OPTIONS /meiduo_admin/users/?page=1&pagesize=10&keyword= HTTP/1.1" 200 0
+WARNING 2019-08-27 07:02:22,392 base 152 Not Found: /meiduo_admin/users/
+WARNING 2019-08-27 07:02:22,392 basehttp 124 "GET /meiduo_admin/users/?page=1&pagesize=10&keyword= HTTP/1.1" 404 8407
+WARNING 2019-08-27 07:02:24,732 base 152 Not Found: /meiduo_admin/statistical/total_count/
+WARNING 2019-08-27 07:02:24,736 base 152 Not Found: /meiduo_admin/statistical/day_increment/
+WARNING 2019-08-27 07:02:24,745 basehttp 124 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 404 8431
+WARNING 2019-08-27 07:02:24,743 basehttp 124 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 404 8425
+WARNING 2019-08-27 07:02:24,743 base 152 Not Found: /meiduo_admin/statistical/day_active/
+WARNING 2019-08-27 07:02:24,747 basehttp 124 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 404 8422
+WARNING 2019-08-27 07:02:24,758 base 152 Not Found: /meiduo_admin/statistical/month_increment/
+WARNING 2019-08-27 07:02:24,771 base 152 Not Found: /meiduo_admin/statistical/goods_day_views/
+WARNING 2019-08-27 07:02:24,776 base 152 Not Found: /meiduo_admin/statistical/day_active/
+WARNING 2019-08-27 07:02:24,777 base 152 Not Found: /meiduo_admin/statistical/day_orders/
+WARNING 2019-08-27 07:02:24,779 basehttp 124 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 404 8437
+WARNING 2019-08-27 07:02:24,779 basehttp 124 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 404 8422
+WARNING 2019-08-27 07:02:24,778 basehttp 124 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 404 8422
+WARNING 2019-08-27 07:02:24,781 basehttp 124 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 404 8437
+WARNING 2019-08-27 07:02:24,791 base 152 Not Found: /meiduo_admin/statistical/day_orders/
+WARNING 2019-08-27 07:02:24,792 basehttp 124 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 404 8422
+INFO 2019-08-27 07:03:08,944 basehttp 124 "POST /meiduo_admin/authorizations/ HTTP/1.1" 200 209
+WARNING 2019-08-27 07:03:08,998 base 152 Not Found: /meiduo_admin/statistical/total_count/
+WARNING 2019-08-27 07:03:09,019 base 152 Not Found: /meiduo_admin/statistical/day_increment/
+WARNING 2019-08-27 07:03:09,023 base 152 Not Found: /meiduo_admin/statistical/day_active/
+WARNING 2019-08-27 07:03:09,023 basehttp 124 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 404 8425
+WARNING 2019-08-27 07:03:09,028 basehttp 124 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 404 8422
+WARNING 2019-08-27 07:03:09,034 basehttp 124 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 404 8431
+WARNING 2019-08-27 07:03:09,039 base 152 Not Found: /meiduo_admin/statistical/day_orders/
+WARNING 2019-08-27 07:03:09,047 basehttp 124 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 404 8422
+WARNING 2019-08-27 07:03:09,052 base 152 Not Found: /meiduo_admin/statistical/month_increment/
+WARNING 2019-08-27 07:03:09,059 base 152 Not Found: /meiduo_admin/statistical/goods_day_views/
+WARNING 2019-08-27 07:03:09,077 basehttp 124 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 404 8437
+WARNING 2019-08-27 07:03:09,078 basehttp 124 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 404 8437
+WARNING 2019-08-27 07:03:09,089 base 152 Not Found: /meiduo_admin/statistical/day_orders/
+WARNING 2019-08-27 07:03:09,091 base 152 Not Found: /meiduo_admin/statistical/day_active/
+WARNING 2019-08-27 07:03:09,091 basehttp 124 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 404 8422
+WARNING 2019-08-27 07:03:09,092 basehttp 124 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 404 8422
