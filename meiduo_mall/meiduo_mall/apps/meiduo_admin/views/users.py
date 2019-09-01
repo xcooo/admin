@@ -14,7 +14,7 @@ from users.models import User
 
 class UserView(ListAPIView):
     """
-    获取用户数据
+    获取用户数据(单个和多个, 在同一个url路径请求下)
     """
     # 使用分页器
     pagination_class = PageNum
@@ -22,3 +22,11 @@ class UserView(ListAPIView):
     queryset = User.objects.all()
     # 指定序列化器
     serializer_class = UserSerializer
+
+
+    # 重写获取查询集数据的方法
+    def get_queryset(self):
+        if self.request.query_params.get('keyword') == '':
+            return User.objects.all()
+        else:
+            return User.objects.filter(username__contains=self.request.query_params.get('keyword'))
