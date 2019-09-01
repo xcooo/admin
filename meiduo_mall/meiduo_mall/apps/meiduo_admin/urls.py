@@ -1,8 +1,10 @@
 from django.conf.urls import url
 from rest_framework_jwt.views import obtain_jwt_token
 
+from meiduo_admin.views.specs import SpuViewset
 from .views import users
 from .views import statistical
+from rest_framework.routers import DefaultRouter
 
 urlpatterns = [
     # 后台登陆路由
@@ -24,4 +26,13 @@ urlpatterns = [
     # ------------------------ 用户管理 ---------------------------------
     #  查询用户
     url(r'^users/$', users.UserView.as_view()),
+
+    # ------------------------ 规格表spu路由 ---------------------------------
+    url(r'^goods/simple/$',SpuViewset.as_view({'get':'simple'}))
 ]
+
+# ------------------------ 规格表spu路由 ---------------------------------
+router = DefaultRouter()
+router.register('goods/specs', SpuViewset,base_name='specs')
+print(router.urls)
+urlpatterns += router.urls

@@ -5,6 +5,8 @@
 @author: www.xcooo.cn
 @Mail: 602006050@qq.com
 """
+import re
+
 from rest_framework import serializers
 
 from users.models import User
@@ -28,6 +30,12 @@ class UserSerializer(serializers.ModelSerializer):
                 'min_length': 3,
             }
         }
+
+    def validate_mobile(self, value):
+        if not re.match(r'1[3-8]\d{9}', value):
+            raise serializers.ValidationError('手机格式不对')
+        return value
+
 
     # 密码需要加密, 需要重写create方法(两种方法)
     def create(self, validated_data):
