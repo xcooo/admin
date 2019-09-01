@@ -15951,3 +15951,153 @@ INFO 2019-08-27 13:07:46,094 basehttp 124 "GET /meiduo_admin/statistical/goods_d
 INFO 2019-08-27 13:07:46,106 basehttp 124 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
 INFO 2019-08-27 13:07:46,111 basehttp 124 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
 INFO 2019-08-27 13:07:46,167 basehttp 124 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 961
+INFO 2019-08-27 13:19:55,812 basehttp 124 "OPTIONS /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 0
+INFO 2019-08-27 13:19:55,818 basehttp 124 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2019-08-27 13:19:55,820 basehttp 124 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2019-08-27 13:19:55,822 basehttp 124 "OPTIONS /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 0
+INFO 2019-08-27 13:19:55,826 basehttp 124 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2019-08-27 13:19:55,828 basehttp 124 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2019-08-27 13:19:55,831 basehttp 124 "OPTIONS /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 0
+INFO 2019-08-27 13:19:55,832 basehttp 124 "OPTIONS /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 0
+INFO 2019-08-27 13:19:55,917 basehttp 124 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2019-08-27 13:19:55,925 basehttp 124 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 31
+INFO 2019-08-27 13:19:55,926 basehttp 124 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2019-08-27 13:19:55,958 basehttp 124 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 32
+INFO 2019-08-27 13:19:55,963 basehttp 124 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 34
+INFO 2019-08-27 13:19:55,974 basehttp 124 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2019-08-27 13:19:56,115 basehttp 124 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2019-08-27 13:19:56,161 basehttp 124 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 961
+INFO 2019-08-27 13:21:57,339 basehttp 124 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 34
+INFO 2019-08-27 13:26:21,682 basehttp 124 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 31
+INFO 2019-08-27 13:26:21,685 basehttp 124 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 32
+INFO 2019-08-27 13:26:21,701 basehttp 124 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2019-08-27 13:26:21,717 basehttp 124 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2019-08-27 13:26:21,736 basehttp 124 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 34
+INFO 2019-08-27 13:26:21,745 basehttp 124 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2019-08-27 13:26:21,758 basehttp 124 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2019-08-27 13:26:21,774 basehttp 124 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 961
+INFO 2019-09-01 02:19:56,898 basehttp 124 "POST /meiduo_admin/authorizations/ HTTP/1.1" 200 209
+INFO 2019-09-01 02:43:02,213 basehttp 124 "OPTIONS /meiduo_admin/authorizations/ HTTP/1.1" 200 0
+INFO 2019-09-01 02:43:02,245 basehttp 124 "POST /meiduo_admin/authorizations/ HTTP/1.1" 200 209
+INFO 2019-09-01 02:43:02,595 basehttp 124 "OPTIONS /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 0
+INFO 2019-09-01 02:43:02,605 basehttp 124 "OPTIONS /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 0
+INFO 2019-09-01 02:43:02,607 basehttp 124 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2019-09-01 02:43:02,609 basehttp 124 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2019-09-01 02:43:02,610 basehttp 124 "OPTIONS /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 0
+INFO 2019-09-01 02:43:02,612 basehttp 124 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2019-09-01 02:43:02,614 basehttp 124 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2019-09-01 02:43:02,615 basehttp 124 "OPTIONS /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 0
+INFO 2019-09-01 02:43:02,632 basehttp 124 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 32
+INFO 2019-09-01 02:43:02,684 basehttp 124 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2019-09-01 02:43:02,684 basehttp 124 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 2
+INFO 2019-09-01 02:43:02,687 basehttp 124 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 31
+INFO 2019-09-01 02:43:02,706 basehttp 124 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2019-09-01 02:43:02,709 basehttp 124 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2019-09-01 02:43:02,738 basehttp 124 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 961
+INFO 2019-09-01 02:43:02,748 basehttp 124 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2019-09-01 02:43:03,892 basehttp 124 "OPTIONS /meiduo_admin/users/?page=1&pagesize=10&keyword= HTTP/1.1" 200 0
+WARNING 2019-09-01 02:43:03,931 base 152 Not Found: /meiduo_admin/users/
+WARNING 2019-09-01 02:43:03,932 basehttp 124 "GET /meiduo_admin/users/?page=1&pagesize=10&keyword= HTTP/1.1" 404 9537
+INFO 2019-09-01 03:17:59,719 basehttp 124 "OPTIONS /meiduo_admin/users/?page=1&pagesize=10&keyword= HTTP/1.1" 200 0
+INFO 2019-09-01 03:17:59,861 basehttp 124 "GET /meiduo_admin/users/?page=1&pagesize=10&keyword= HTTP/1.1" 200 846
+WARNING 2019-09-01 03:18:15,525 basehttp 124 "GET /meiduo_admin/users/ HTTP/1.1" 401 35
+INFO 2019-09-01 03:20:13,762 basehttp 124 "GET /meiduo_admin/users/?page=1&pagesize=10&keyword= HTTP/1.1" 200 846
+INFO 2019-09-01 03:20:18,177 basehttp 124 "GET /meiduo_admin/users/?page=1&pagesize=10&keyword= HTTP/1.1" 200 846
+WARNING 2019-09-01 03:23:19,567 basehttp 124 "GET /meiduo_admin/users/ HTTP/1.1" 401 35
+WARNING 2019-09-01 03:31:54,305 basehttp 124 "GET /meiduo_admin/users/ HTTP/1.1" 401 35
+WARNING 2019-09-01 03:31:55,554 basehttp 124 "GET /meiduo_admin/users/ HTTP/1.1" 401 35
+WARNING 2019-09-01 03:31:55,995 basehttp 124 "GET /meiduo_admin/users/ HTTP/1.1" 401 35
+WARNING 2019-09-01 03:32:53,282 basehttp 124 "GET /meiduo_admin/users/ HTTP/1.1" 401 35
+WARNING 2019-09-01 03:32:55,382 basehttp 124 "GET /meiduo_admin/users/ HTTP/1.1" 401 35
+INFO 2019-09-01 03:34:58,470 basehttp 124 "OPTIONS /meiduo_admin/users/?page=1&pagesize=10&keyword= HTTP/1.1" 200 0
+INFO 2019-09-01 03:34:58,733 basehttp 124 "GET /meiduo_admin/users/?page=1&pagesize=10&keyword= HTTP/1.1" 200 758
+ERROR 2019-09-01 03:35:04,053 exception 135 Internal Server Error: /meiduo_admin/users/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 217, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 215, in _get_response
+    response = response.render()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/template/response.py", line 107, in render
+    self.content = self.rendered_content
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/response.py", line 72, in rendered_content
+    ret = renderer.render(self.data, accepted_media_type, context)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/renderers.py", line 723, in render
+    template = loader.get_template(self.template)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: rest_framework/api.html
+ERROR 2019-09-01 03:35:04,178 basehttp 124 "GET /meiduo_admin/users/?page=1&pagesize=10&keyword= HTTP/1.1" 500 94144
+WARNING 2019-09-01 03:35:04,363 base 152 Not Found: /favicon.ico
+WARNING 2019-09-01 03:35:04,364 basehttp 124 "GET /favicon.ico HTTP/1.1" 404 8283
+WARNING 2019-09-01 03:45:33,823 basehttp 124 "GET /meiduo_admin/users/ HTTP/1.1" 401 35
+WARNING 2019-09-01 03:45:34,851 basehttp 124 "GET /meiduo_admin/users/ HTTP/1.1" 401 35
+WARNING 2019-09-01 03:45:35,343 basehttp 124 "GET /meiduo_admin/users/ HTTP/1.1" 401 35
+INFO 2019-09-01 03:45:40,284 basehttp 124 "OPTIONS /meiduo_admin/users/?page=1&pagesize=10&keyword= HTTP/1.1" 200 0
+INFO 2019-09-01 03:45:40,472 basehttp 124 "GET /meiduo_admin/users/?page=1&pagesize=10&keyword= HTTP/1.1" 200 17
+INFO 2019-09-01 03:47:15,793 basehttp 124 "GET /meiduo_admin/users/ HTTP/1.1" 200 846
+INFO 2019-09-01 03:47:37,063 basehttp 124 "GET /meiduo_admin/users/ HTTP/1.1" 200 846
+INFO 2019-09-01 03:49:17,729 basehttp 124 "GET /meiduo_admin/users/?page=1&pagesize=10&keyword= HTTP/1.1" 200 13
+INFO 2019-09-01 03:51:59,026 basehttp 124 "GET /meiduo_admin/users/ HTTP/1.1" 200 846
+INFO 2019-09-01 03:52:02,628 basehttp 124 "GET /meiduo_admin/users/ HTTP/1.1" 200 846
+ERROR 2019-09-01 03:52:10,322 exception 135 Internal Server Error: /meiduo_admin/users/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/generics.py", line 201, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/mixins.py", line 45, in list
+    return self.get_paginated_response(serializer.data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/generics.py", line 180, in get_paginated_response
+    return self.paginator.get_paginated_response(data)
+  File "/home/python/Desktop/admin/meiduo_mall/meiduo_mall/apps/meiduo_admin/utils.py", line 28, in get_paginated_response
+    'id': data.id,
+AttributeError: 'ReturnList' object has no attribute 'id'
+ERROR 2019-09-01 03:52:10,424 basehttp 124 "GET /meiduo_admin/users/?page=1&pagesize=10&keyword= HTTP/1.1" 500 20421
+ERROR 2019-09-01 03:53:27,051 exception 135 Internal Server Error: /meiduo_admin/users/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/generics.py", line 201, in get
+    return self.list(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/mixins.py", line 45, in list
+    return self.get_paginated_response(serializer.data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/generics.py", line 180, in get_paginated_response
+    return self.paginator.get_paginated_response(data)
+  File "/home/python/Desktop/admin/meiduo_mall/meiduo_mall/apps/meiduo_admin/utils.py", line 28, in get_paginated_response
+    'id': data[0].id,
+AttributeError: 'collections.OrderedDict' object has no attribute 'id'
+ERROR 2019-09-01 03:53:27,075 basehttp 124 "GET /meiduo_admin/users/?page=1&pagesize=10&keyword= HTTP/1.1" 500 20450
+INFO 2019-09-01 04:07:13,873 basehttp 124 "OPTIONS /meiduo_admin/users/?page=1&pagesize=10&keyword= HTTP/1.1" 200 0
+INFO 2019-09-01 04:07:14,070 basehttp 124 "GET /meiduo_admin/users/?page=1&pagesize=10&keyword= HTTP/1.1" 200 695
+INFO 2019-09-01 04:09:09,602 basehttp 124 "GET /meiduo_admin/users/ HTTP/1.1" 200 846
+INFO 2019-09-01 04:09:57,621 basehttp 124 "GET /meiduo_admin/users/?page=1&pagesize=10&keyword= HTTP/1.1" 200 695
