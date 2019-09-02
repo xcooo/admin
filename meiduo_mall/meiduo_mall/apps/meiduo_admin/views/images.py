@@ -42,38 +42,36 @@ class ImagesViewset(ModelViewSet):
         return Response(ser.data)
 
 
-    def create(self, request, *args, **kwargs):
-        # 1.获取前端数据   SKU商品id (sku)  	SKU商品图片 (image)
-        data = request.data
-
-        # 2.验证数据
-        ser = self.get_serializer(data=data)
-        ser.is_valid()
-
-        # 3.建立fastdfs的客户端
-        client = Fdfs_client(settings.FASTDFS_PATH)
-
-        # 4.上传upload图片
-        image = request.FILES.get('image')
-        res = client.upload_appender_by_buffer(image.read())  # 文件byte数据
-
-        # 5.判断图片是否上传成功
-        if res['Status'] != 'Upload successed.':
-            return Response({'error':'文件上传失败'})
-
-        # 6.保存图片表
-        sku = ser.validated_data['sku']
-        img = SKUImage.objects.create(sku_id = sku.id, image = res['Remote file_id'] )
-
-        # 7.返回保存后的图片数据
-        #
-        # {
-        #     "id": "图片id",
-        #     "sku": "SKU商品id",
-        #     "image": "图片地址"
-        # }
-        return Response({
-            'id':img.id,
-            'sku':img.sku_id,
-            'image':img.image.url
-        })
+    # def create(self, request, *args, **kwargs):
+    #     # 1.获取前端数据   SKU商品id (sku)  	SKU商品图片 (image)
+    #     data = request.data
+    #
+    #     # 2.验证数据
+    #     ser = self.get_serializer(data=data)
+    #     ser.is_valid()
+    #
+    #     # 3.建立fastdfs的客户端
+    #     # client = Fdfs_client(settings.FASTDFS_PATH)
+    #     #
+    #     # # 4.上传upload图片
+    #     # image = request.FILES.get('image')
+    #     # res = client.upload_appender_by_buffer(image.read())  # 文件byte数据
+    #     #
+    #     # # 5.判断图片是否上传成功
+    #     # if res['Status'] != 'Upload successed.':
+    #     #     return Response({'error':'文件上传失败'})
+    #     #
+    #     # # 6.保存图片表
+    #     # sku = ser.validated_data['sku']  # 验证后的数据是一个对象
+    #     # img = SKUImage.objects.create(sku_id = sku.id, image = res['Remote file_id'] )
+    #
+    #     ser.save()
+    #
+    #     # 7.返回保存后的图片数据
+    #     #
+    #     # {
+    #     #     "id": "图片id",
+    #     #     "sku": "SKU商品id",
+    #     #     "image": "图片地址"
+    #     # }
+    #     return Response(ser.data, status=201)
