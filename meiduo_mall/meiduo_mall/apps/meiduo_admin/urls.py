@@ -2,6 +2,7 @@ from django.conf.urls import url
 from rest_framework_jwt.views import obtain_jwt_token
 
 from meiduo_admin.views.images import ImagesViewset
+from meiduo_admin.views.skus import SkuView
 from meiduo_admin.views.specs import SpuViewset
 from .views import users
 from .views import statistical
@@ -33,17 +34,22 @@ urlpatterns = [
 
     # ------------------------ 图片id路由 ---------------------------------
     url(r'^skus/simple/$', ImagesViewset.as_view({'get': 'simple'})),
-
 ]
 
 # ------------------------ 规格表spu路由 ---------------------------------
 router = DefaultRouter()
 router.register('goods/specs', SpuViewset,base_name='specs')
-print(router.urls)
+# print(router.urls)
 urlpatterns += router.urls
 
 # ------------------------ 图片表spu路由 ---------------------------------
 router = DefaultRouter()
 router.register('skus/images', ImagesViewset, base_name='images')
+# print(router.urls)
+urlpatterns += router.urls
+
+# ------------------------ sku路由 ---------------------------------
+router = DefaultRouter()
+router.register('skus', SkuView, base_name='skus')
 print(router.urls)
 urlpatterns += router.urls

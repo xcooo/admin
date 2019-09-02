@@ -6,8 +6,8 @@ class GoodsCategory(BaseModel):
 
     """商品类别
 
-        上一级查询下一级数据相当于是主表查询副表
-        下一级查询上一级数据相当于是副表查询主表
+        上一级查询下一级数据相当于是主表查询副表  GoodsCategory.objects.filter(parent=None) 获取一级分类
+        下一级查询上一级数据相当于是副表查询主表  GoodsCategory.objects.filter(subs_id=None) 获取三级分类
     """
     name = models.CharField(max_length=10, verbose_name='名称')
     parent = models.ForeignKey('self', related_name='subs', null=True, blank=True, on_delete=models.CASCADE,
