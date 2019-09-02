@@ -13,8 +13,6 @@ class ImageSerializer(serializers.ModelSerializer):
     """
     图片序列化器
     """
-    # 关联嵌套序列化字段
-    sku_id = serializers.IntegerField()
     class Meta:
         model = SKUImage
         fields = '__all__'
