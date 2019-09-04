@@ -15,7 +15,6 @@ from rest_framework.permissions import IsAdminUser
 from goods.models import GoodsCategory
 
 
-
 class SkuView(ModelViewSet):
     """
     获取sku数据(单个和多个, 在同一个url路径请求下)
@@ -31,6 +30,15 @@ class SkuView(ModelViewSet):
 
     # 指定权限类
     permission_classes = [IsAdminUser]
+
+    # 重写获取查询集数据的方法
+    def get_queryset(self):
+        if self.request.query_params.get('keyword') == '':
+            return SKU.objects.all()
+        elif self.request.query_params.get('keyword') is None:
+            return SKU.objects.all()
+        else:
+            return SKU.objects.filter(name__contains=self.request.query_params.get('keyword'))
 
     # 生成自动生成自定义方法的路由时, 需要给视图添加action装饰器
     # detail=True 是传入了pk值, 如果没有传pk值, detail=False
