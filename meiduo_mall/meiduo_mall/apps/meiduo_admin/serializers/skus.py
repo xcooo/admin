@@ -9,6 +9,7 @@ from rest_framework import serializers
 from goods.models import SKU, SPUSpecification, SpecificationOption, SKUSpecification
 from goods.models import GoodsCategory
 from django.db import transaction
+from celery_tasks.static_file.tasks import get_detail_html
 
 
 class SKUSpecificationSerializer(serializers.ModelSerializer):
@@ -57,6 +58,10 @@ class SkuSerializer(serializers.ModelSerializer):
             else:
                 # 提交
                 transaction.savepoint_commit(save_point)
+
+                # 生成详情页的静态页面
+                get_detail_html.delay(sku.id)
+
                 return sku
 
     def update(self, instance, validated_data):
@@ -83,6 +88,9 @@ class SkuSerializer(serializers.ModelSerializer):
                 # 没有捕获异常，数据库操作成功，进行提交
                 transaction.savepoint_commit(sid)
                 # 执行异步任务生成新的静态页面
+
+                # 生成详情页的静态页面
+                get_detail_html.delay(instance.id)
 
                 return instance
 
