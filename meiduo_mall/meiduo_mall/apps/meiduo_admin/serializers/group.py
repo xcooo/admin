@@ -9,13 +9,6 @@ from rest_framework import serializers
 from django.contrib.auth.models import Group
 
 
-# class GroupPermissionsSerializer(serializers.ModelSerializer):
-#     """
-#     用户权限序列化器
-#     """
-#     class Meta:
-#         model =
-
 class GroupSerialzier(serializers.ModelSerializer):
     """
     分组表序列化器

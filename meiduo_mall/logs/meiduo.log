@@ -20976,3 +20976,25 @@ INFO 2019-09-05 07:32:46,890 basehttp 124 "GET /meiduo_admin/permission/groups/?
 WARNING 2019-09-05 07:32:46,901 basehttp 124 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 404 19944
 INFO 2019-09-05 07:32:50,131 basehttp 124 "OPTIONS /meiduo_admin/permission/groups/4/ HTTP/1.1" 200 0
 INFO 2019-09-05 07:32:50,183 basehttp 124 "GET /meiduo_admin/permission/groups/4/ HTTP/1.1" 200 41
+INFO 2019-09-05 07:38:12,453 basehttp 124 "OPTIONS /meiduo_admin/permission/groups/?page=1&pagesize=10 HTTP/1.1" 200 0
+INFO 2019-09-05 07:38:12,454 basehttp 124 "OPTIONS /meiduo_admin/permission/simple/ HTTP/1.1" 200 0
+INFO 2019-09-05 07:38:12,457 basehttp 124 "OPTIONS /meiduo_admin/permission/simple/ HTTP/1.1" 200 0
+WARNING 2019-09-05 07:38:12,745 base 152 Not Found: /meiduo_admin/permission/simple/
+WARNING 2019-09-05 07:38:12,764 basehttp 124 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 404 19944
+INFO 2019-09-05 07:38:12,824 basehttp 124 "GET /meiduo_admin/permission/groups/?page=1&pagesize=10 HTTP/1.1" 200 243
+WARNING 2019-09-05 07:38:12,849 base 152 Not Found: /meiduo_admin/permission/simple/
+WARNING 2019-09-05 07:38:12,855 basehttp 124 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 404 19944
+WARNING 2019-09-05 07:42:17,588 base 152 Not Found: /meiduo_admin/permission/simple/
+WARNING 2019-09-05 07:42:17,590 basehttp 124 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 404 20394
+WARNING 2019-09-05 07:42:17,615 base 152 Not Found: /meiduo_admin/permission/simple/
+INFO 2019-09-05 07:42:17,616 basehttp 124 "GET /meiduo_admin/permission/groups/?page=1&pagesize=10 HTTP/1.1" 200 243
+WARNING 2019-09-05 07:42:17,622 basehttp 124 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 404 20394
+INFO 2019-09-05 07:44:33,094 basehttp 124 "GET /meiduo_admin/permission/groups/?page=1&pagesize=10 HTTP/1.1" 200 243
+INFO 2019-09-05 07:44:33,095 basehttp 124 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 200 6785
+INFO 2019-09-05 07:44:33,145 basehttp 124 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 200 6785
+INFO 2019-09-05 07:52:44,664 basehttp 124 "OPTIONS /meiduo_admin/permission/groups/ HTTP/1.1" 200 0
+INFO 2019-09-05 07:52:44,752 basehttp 124 "POST /meiduo_admin/permission/groups/ HTTP/1.1" 201 49
+INFO 2019-09-05 07:52:44,809 basehttp 124 "OPTIONS /meiduo_admin/permission/groups/?pagesize=10 HTTP/1.1" 200 0
+INFO 2019-09-05 07:52:44,834 basehttp 124 "GET /meiduo_admin/permission/groups/?pagesize=10 HTTP/1.1" 200 293
+INFO 2019-09-05 07:52:47,296 basehttp 124 "OPTIONS /meiduo_admin/permission/groups/7/ HTTP/1.1" 200 0
+INFO 2019-09-05 07:52:47,401 basehttp 124 "GET /meiduo_admin/permission/groups/7/ HTTP/1.1" 200 49

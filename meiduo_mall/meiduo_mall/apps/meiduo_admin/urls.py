@@ -43,6 +43,9 @@ urlpatterns = [
 
     # ------------------------ 权限类型路由 ---------------------------------
     url(r'^permission/content_types/$', PermissionsView.as_view({'get': 'content_type'})),
+
+    # ------------------------ 用户组权限获取路由 ---------------------------------
+    url(r'^permission/simple/$', GroupView.as_view({'get': 'simple'})),
 ]
 
 # ------------------------ 规格表spu路由 ---------------------------------
