@@ -18759,3 +18759,300 @@ INFO 2019-09-04 13:10:25,294 basehttp 124 "GET /meiduo_admin/skus/categories/ HT
 INFO 2019-09-04 13:10:27,147 basehttp 124 "GET /meiduo_admin/goods/1/specs/ HTTP/1.1" 200 1468
 INFO 2019-09-04 13:10:27,191 basehttp 124 "GET /meiduo_admin/skus/2/ HTTP/1.1" 200 1997
 INFO 2019-09-04 13:10:27,406 basehttp 124 "GET /meiduo_admin/goods/1/specs/ HTTP/1.1" 200 1468
+INFO 2019-09-04 13:44:45,946 basehttp 124 "OPTIONS /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 0
+WARNING 2019-09-04 13:44:45,983 base 152 Not Found: /meiduo_admin/orders/
+WARNING 2019-09-04 13:44:45,984 basehttp 124 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 404 15438
+INFO 2019-09-04 13:47:21,870 basehttp 124 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 521
+INFO 2019-09-04 13:47:24,822 basehttp 124 "OPTIONS /meiduo_admin/orders/20190406122652000000001/ HTTP/1.1" 200 0
+INFO 2019-09-04 13:47:24,837 basehttp 124 "GET /meiduo_admin/orders/20190406122652000000001/ HTTP/1.1" 200 232
+INFO 2019-09-04 13:47:36,412 basehttp 124 "OPTIONS /meiduo_admin/orders/20190406122652000000001/status/ HTTP/1.1" 200 0
+WARNING 2019-09-04 13:47:36,456 base 152 Not Found: /meiduo_admin/orders/20190406122652000000001/status/
+WARNING 2019-09-04 13:47:36,457 basehttp 124 "PUT /meiduo_admin/orders/20190406122652000000001/status/ HTTP/1.1" 404 16752
+INFO 2019-09-04 13:55:13,093 basehttp 124 "OPTIONS /meiduo_admin/orders/undefined/ HTTP/1.1" 200 0
+WARNING 2019-09-04 13:55:13,202 base 152 Not Found: /meiduo_admin/orders/undefined/
+WARNING 2019-09-04 13:55:13,208 basehttp 124 "GET /meiduo_admin/orders/undefined/ HTTP/1.1" 404 23
+INFO 2019-09-04 13:55:16,017 basehttp 124 "OPTIONS /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 0
+INFO 2019-09-04 13:55:16,053 basehttp 124 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 1004
+INFO 2019-09-04 13:55:17,130 basehttp 124 "GET /meiduo_admin/orders/20190406122652000000001/ HTTP/1.1" 200 705
+WARNING 2019-09-04 13:58:57,179 base 152 Not Found: /meiduo_admin/orders/undefined/
+WARNING 2019-09-04 13:58:57,184 basehttp 124 "GET /meiduo_admin/orders/undefined/ HTTP/1.1" 404 23
+WARNING 2019-09-04 13:59:21,972 base 152 Not Found: /meiduo_admin/orders/undefined/
+WARNING 2019-09-04 13:59:21,972 basehttp 124 "GET /meiduo_admin/orders/undefined/ HTTP/1.1" 404 23
+INFO 2019-09-04 13:59:26,953 basehttp 124 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 600
+INFO 2019-09-04 13:59:29,874 basehttp 124 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 600
+INFO 2019-09-04 13:59:30,794 basehttp 124 "OPTIONS /meiduo_admin/orders/20190406122652000000001/ HTTP/1.1" 200 0
+INFO 2019-09-04 13:59:30,810 basehttp 124 "GET /meiduo_admin/orders/20190406122652000000001/ HTTP/1.1" 200 301
+INFO 2019-09-04 14:06:36,740 basehttp 124 "OPTIONS /meiduo_admin/orders/undefined/ HTTP/1.1" 200 0
+WARNING 2019-09-04 14:06:36,847 base 152 Not Found: /meiduo_admin/orders/undefined/
+WARNING 2019-09-04 14:06:36,848 basehttp 124 "GET /meiduo_admin/orders/undefined/ HTTP/1.1" 404 23
+INFO 2019-09-04 14:06:39,309 basehttp 124 "OPTIONS /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 0
+ERROR 2019-09-04 14:06:39,330 exception 135 Internal Server Error: /meiduo_admin/orders/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/viewsets.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/mixins.py", line 45, in list
+    return self.get_paginated_response(serializer.data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 765, in data
+    ret = super(ListSerializer, self).data
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 683, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 683, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 527, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 683, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 683, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 527, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 683, in to_representation
+    self.child.to_representation(item) for item in iterable
+TypeError: 'SKU' object is not iterable
+ERROR 2019-09-04 14:06:39,382 basehttp 124 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 500 21772
+ERROR 2019-09-04 14:06:41,397 exception 135 Internal Server Error: /meiduo_admin/orders/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/viewsets.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/mixins.py", line 45, in list
+    return self.get_paginated_response(serializer.data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 765, in data
+    ret = super(ListSerializer, self).data
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 683, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 683, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 527, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 683, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 683, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 527, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 683, in to_representation
+    self.child.to_representation(item) for item in iterable
+TypeError: 'SKU' object is not iterable
+ERROR 2019-09-04 14:06:41,455 basehttp 124 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 500 21806
+ERROR 2019-09-04 14:08:24,975 exception 135 Internal Server Error: /meiduo_admin/orders/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/viewsets.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/mixins.py", line 45, in list
+    return self.get_paginated_response(serializer.data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 765, in data
+    ret = super(ListSerializer, self).data
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 683, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 683, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 527, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 683, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 683, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 510, in to_representation
+    fields = self._readable_fields
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 376, in _readable_fields
+    field for field in self.fields.values()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 1020, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 1121, in get_field_names
+    serializer_class=self.__class__.__name__
+AssertionError: The field 'sku_set' was declared on serializer OrderGoodsSerializer, but has not been included in the 'fields' option.
+ERROR 2019-09-04 14:08:25,055 basehttp 124 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 500 22663
+ERROR 2019-09-04 14:08:48,534 exception 135 Internal Server Error: /meiduo_admin/orders/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/viewsets.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/mixins.py", line 45, in list
+    return self.get_paginated_response(serializer.data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 765, in data
+    ret = super(ListSerializer, self).data
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 683, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 683, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 527, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 683, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 683, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 510, in to_representation
+    fields = self._readable_fields
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 376, in _readable_fields
+    field for field in self.fields.values()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 363, in fields
+    for key, value in self.get_fields().items():
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 1020, in get_fields
+    field_names = self.get_field_names(declared_fields, info)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 1121, in get_field_names
+    serializer_class=self.__class__.__name__
+AssertionError: The field 'sku_set' was declared on serializer OrderGoodsSerializer, but has not been included in the 'fields' option.
+ERROR 2019-09-04 14:08:48,592 basehttp 124 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 500 22664
+ERROR 2019-09-04 14:15:01,362 exception 135 Internal Server Error: /meiduo_admin/orders/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/viewsets.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/mixins.py", line 45, in list
+    return self.get_paginated_response(serializer.data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 765, in data
+    ret = super(ListSerializer, self).data
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 683, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 683, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 527, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 683, in to_representation
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 683, in <listcomp>
+    self.child.to_representation(item) for item in iterable
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 527, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 683, in to_representation
+    self.child.to_representation(item) for item in iterable
+TypeError: 'SKU' object is not iterable
+ERROR 2019-09-04 14:15:01,440 basehttp 124 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 500 21805
+INFO 2019-09-04 14:21:06,244 basehttp 124 "OPTIONS /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 0
+INFO 2019-09-04 14:21:06,344 basehttp 124 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 975
+INFO 2019-09-04 14:21:07,843 basehttp 124 "OPTIONS /meiduo_admin/orders/20190406122652000000001/ HTTP/1.1" 200 0
+INFO 2019-09-04 14:21:07,904 basehttp 124 "GET /meiduo_admin/orders/20190406122652000000001/ HTTP/1.1" 200 676
+INFO 2019-09-04 14:21:21,064 basehttp 124 "OPTIONS /meiduo_admin/orders/undefined/ HTTP/1.1" 200 0
+WARNING 2019-09-04 14:21:21,120 base 152 Not Found: /meiduo_admin/orders/undefined/
+WARNING 2019-09-04 14:21:21,122 basehttp 124 "GET /meiduo_admin/orders/undefined/ HTTP/1.1" 404 23
+WARNING 2019-09-04 14:21:25,143 base 152 Not Found: /meiduo_admin/orders/undefined/
+WARNING 2019-09-04 14:21:25,144 basehttp 124 "GET /meiduo_admin/orders/undefined/ HTTP/1.1" 404 23
+INFO 2019-09-04 14:21:34,892 basehttp 124 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 975
+INFO 2019-09-04 14:21:36,258 basehttp 124 "GET /meiduo_admin/orders/20190406122652000000001/ HTTP/1.1" 200 676
+WARNING 2019-09-04 14:21:40,214 base 152 Not Found: /meiduo_admin/orders/undefined/
+WARNING 2019-09-04 14:21:40,215 basehttp 124 "GET /meiduo_admin/orders/undefined/ HTTP/1.1" 404 23
+INFO 2019-09-04 14:39:49,402 basehttp 124 "OPTIONS /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 0
+INFO 2019-09-04 14:39:49,432 basehttp 124 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 975
+INFO 2019-09-04 14:39:50,837 basehttp 124 "OPTIONS /meiduo_admin/orders/20190406122652000000001/ HTTP/1.1" 200 0
+INFO 2019-09-04 14:39:50,863 basehttp 124 "GET /meiduo_admin/orders/20190406122652000000001/ HTTP/1.1" 200 676
+INFO 2019-09-05 03:18:22,845 basehttp 124 "OPTIONS /meiduo_admin/authorizations/ HTTP/1.1" 200 0
+INFO 2019-09-05 03:18:22,969 basehttp 124 "POST /meiduo_admin/authorizations/ HTTP/1.1" 200 209
+INFO 2019-09-05 03:18:23,160 basehttp 124 "OPTIONS /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 0
+INFO 2019-09-05 03:18:23,290 basehttp 124 "OPTIONS /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 0
+INFO 2019-09-05 03:18:23,292 basehttp 124 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2019-09-05 03:18:23,302 basehttp 124 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2019-09-05 03:18:23,304 basehttp 124 "OPTIONS /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 0
+INFO 2019-09-05 03:18:23,305 basehttp 124 "OPTIONS /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 0
+INFO 2019-09-05 03:18:23,312 basehttp 124 "OPTIONS /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 0
+INFO 2019-09-05 03:18:23,322 basehttp 124 "OPTIONS /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 0
+INFO 2019-09-05 03:18:23,655 basehttp 124 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2019-09-05 03:18:23,698 basehttp 124 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2019-09-05 03:18:23,699 basehttp 124 "GET /meiduo_admin/statistical/day_increment/ HTTP/1.1" 200 31
+INFO 2019-09-05 03:18:23,700 basehttp 124 "GET /meiduo_admin/statistical/goods_day_views/ HTTP/1.1" 200 2
+INFO 2019-09-05 03:18:23,706 basehttp 124 "GET /meiduo_admin/statistical/day_active/ HTTP/1.1" 200 31
+INFO 2019-09-05 03:18:23,719 basehttp 124 "GET /meiduo_admin/statistical/day_orders/ HTTP/1.1" 200 31
+INFO 2019-09-05 03:18:23,720 basehttp 124 "GET /meiduo_admin/statistical/total_count/ HTTP/1.1" 200 32
+INFO 2019-09-05 03:18:23,774 basehttp 124 "GET /meiduo_admin/statistical/month_increment/ HTTP/1.1" 200 961
+INFO 2019-09-05 03:18:25,592 basehttp 124 "OPTIONS /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 0
+INFO 2019-09-05 03:18:25,735 basehttp 124 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 975
+INFO 2019-09-05 03:18:27,124 basehttp 124 "OPTIONS /meiduo_admin/orders/20190406122652000000001/ HTTP/1.1" 200 0
+INFO 2019-09-05 03:18:27,155 basehttp 124 "GET /meiduo_admin/orders/20190406122652000000001/ HTTP/1.1" 200 676
+INFO 2019-09-05 03:19:37,200 basehttp 124 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 975
+INFO 2019-09-05 03:19:41,913 basehttp 124 "OPTIONS /meiduo_admin/orders/?page=1&pagesize=10&keyword=20190406122652000000001 HTTP/1.1" 200 0
+INFO 2019-09-05 03:19:41,939 basehttp 124 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword=20190406122652000000001 HTTP/1.1" 200 975
+INFO 2019-09-05 03:19:42,600 basehttp 124 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword=20190406122652000000001 HTTP/1.1" 200 975
+INFO 2019-09-05 03:19:42,838 basehttp 124 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword=20190406122652000000001 HTTP/1.1" 200 975
+INFO 2019-09-05 03:19:43,228 basehttp 124 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword=20190406122652000000001 HTTP/1.1" 200 975
+INFO 2019-09-05 03:19:48,762 basehttp 124 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword=20190406122652000000001 HTTP/1.1" 200 975
+INFO 2019-09-05 03:19:49,452 basehttp 124 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword=20190406122652000000001 HTTP/1.1" 200 975
+INFO 2019-09-05 03:19:49,648 basehttp 124 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword=20190406122652000000001 HTTP/1.1" 200 975
+INFO 2019-09-05 03:21:47,857 basehttp 124 "OPTIONS /meiduo_admin/users/?page=1&pagesize=10&keyword= HTTP/1.1" 200 0
+INFO 2019-09-05 03:21:47,904 basehttp 124 "GET /meiduo_admin/users/?page=1&pagesize=10&keyword= HTTP/1.1" 200 695
+INFO 2019-09-05 03:23:05,466 basehttp 124 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 975
+INFO 2019-09-05 03:27:41,961 basehttp 124 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 975
+INFO 2019-09-05 03:27:49,249 basehttp 124 "OPTIONS /meiduo_admin/orders/?page=1&pagesize=10&keyword=20190422122652000000001 HTTP/1.1" 200 0
+INFO 2019-09-05 03:27:49,339 basehttp 124 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword=20190422122652000000001 HTTP/1.1" 200 298
