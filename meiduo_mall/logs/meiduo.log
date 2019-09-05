@@ -19128,3 +19128,1785 @@ INFO 2019-09-05 04:22:19,049 basehttp 124 "OPTIONS /meiduo_admin/permission/perm
 INFO 2019-09-05 04:22:19,074 basehttp 124 "GET /meiduo_admin/permission/perms/?page=4&pagesize=10 HTTP/1.1" 200 1007
 INFO 2019-09-05 04:22:22,933 basehttp 124 "OPTIONS /meiduo_admin/permission/perms/?page=8&pagesize=10 HTTP/1.1" 200 0
 INFO 2019-09-05 04:22:22,957 basehttp 124 "GET /meiduo_admin/permission/perms/?page=8&pagesize=10 HTTP/1.1" 200 524
+INFO 2019-09-05 04:55:54,441 basehttp 124 "OPTIONS /meiduo_admin/permission/content_types/ HTTP/1.1" 200 0
+INFO 2019-09-05 04:55:54,444 basehttp 124 "OPTIONS /meiduo_admin/permission/content_types/ HTTP/1.1" 200 0
+INFO 2019-09-05 04:55:54,451 basehttp 124 "OPTIONS /meiduo_admin/permission/perms/?page=1&pagesize=10 HTTP/1.1" 200 0
+WARNING 2019-09-05 04:55:54,549 base 152 Not Found: /meiduo_admin/permission/content_types/
+WARNING 2019-09-05 04:55:54,555 basehttp 124 "GET /meiduo_admin/permission/content_types/ HTTP/1.1" 404 18476
+INFO 2019-09-05 04:55:54,555 basehttp 124 "GET /meiduo_admin/permission/perms/?page=1&pagesize=10 HTTP/1.1" 200 843
+WARNING 2019-09-05 04:55:54,591 base 152 Not Found: /meiduo_admin/permission/content_types/
+WARNING 2019-09-05 04:55:54,592 basehttp 124 "GET /meiduo_admin/permission/content_types/ HTTP/1.1" 404 18476
+INFO 2019-09-05 04:56:11,182 basehttp 124 "OPTIONS /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 0
+INFO 2019-09-05 04:56:11,245 basehttp 124 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 975
+INFO 2019-09-05 04:56:12,748 basehttp 124 "OPTIONS /meiduo_admin/skus/categories/ HTTP/1.1" 200 0
+INFO 2019-09-05 04:56:12,749 basehttp 124 "OPTIONS /meiduo_admin/goods/simple/ HTTP/1.1" 200 0
+INFO 2019-09-05 04:56:12,752 basehttp 124 "OPTIONS /meiduo_admin/skus/categories/ HTTP/1.1" 200 0
+INFO 2019-09-05 04:56:12,754 basehttp 124 "OPTIONS /meiduo_admin/goods/simple/ HTTP/1.1" 200 0
+INFO 2019-09-05 04:56:12,755 basehttp 124 "OPTIONS /meiduo_admin/skus/?page=1&pagesize=10&keyword= HTTP/1.1" 200 0
+INFO 2019-09-05 04:56:12,887 basehttp 124 "GET /meiduo_admin/goods/simple/ HTTP/1.1" 200 138
+INFO 2019-09-05 04:56:12,920 basehttp 124 "GET /meiduo_admin/goods/simple/ HTTP/1.1" 200 138
+INFO 2019-09-05 04:56:12,950 basehttp 124 "GET /meiduo_admin/skus/categories/ HTTP/1.1" 200 56271
+INFO 2019-09-05 04:56:12,999 basehttp 124 "GET /meiduo_admin/skus/categories/ HTTP/1.1" 200 56271
+INFO 2019-09-05 04:56:13,002 basehttp 124 "GET /meiduo_admin/skus/?page=1&pagesize=10&keyword= HTTP/1.1" 200 7098
+INFO 2019-09-05 04:56:14,676 basehttp 124 "OPTIONS /meiduo_admin/goods/1/specs/ HTTP/1.1" 200 0
+INFO 2019-09-05 04:56:14,701 basehttp 124 "GET /meiduo_admin/goods/1/specs/ HTTP/1.1" 200 1468
+INFO 2019-09-05 04:56:14,714 basehttp 124 "OPTIONS /meiduo_admin/skus/2/ HTTP/1.1" 200 0
+INFO 2019-09-05 04:56:14,753 basehttp 124 "GET /meiduo_admin/skus/2/ HTTP/1.1" 200 1997
+INFO 2019-09-05 04:56:15,012 basehttp 124 "GET /meiduo_admin/goods/1/specs/ HTTP/1.1" 200 1468
+ERROR 2019-09-05 04:57:32,625 exception 135 Internal Server Error: /meiduo_admin/skus/2/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 893, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1103, in _read_query_result
+    result.read()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1396, in read
+    first_packet = self.connection._read_packet()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/python/Desktop/admin/meiduo_mall/meiduo_mall/apps/meiduo_admin/serializers/skus.py", line 77, in update
+    SKU.objects.filter(id=instance.id).update(**validated_data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/query.py", line 647, in update
+    rows = query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1204, in execute_sql
+    cursor = super(SQLUpdateCompiler, self).execute_sql(result_type)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 899, in execute_sql
+    raise original_exception
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 889, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 893, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1103, in _read_query_result
+    result.read()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1396, in read
+    first_packet = self.connection._read_packet()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/viewsets.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/python/Desktop/admin/meiduo_mall/meiduo_mall/apps/meiduo_admin/serializers/skus.py", line 85, in update
+    transaction.savepoint_rollback(sid)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/transaction.py", line 66, in savepoint_rollback
+    get_connection(using).savepoint_rollback(sid)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/base/base.py", line 348, in savepoint_rollback
+    self._savepoint_rollback(sid)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/base/base.py", line 308, in _savepoint_rollback
+    cursor.execute(self.ops.savepoint_rollback_sql(sid))
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 59, in execute
+    self.db.validate_no_broken_transaction()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/base/base.py", line 448, in validate_no_broken_transaction
+    "An error occurred in the current transaction. You can't "
+django.db.transaction.TransactionManagementError: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+ERROR 2019-09-05 04:57:32,626 exception 135 Internal Server Error: /meiduo_admin/skus/2/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 893, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1103, in _read_query_result
+    result.read()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1396, in read
+    first_packet = self.connection._read_packet()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/python/Desktop/admin/meiduo_mall/meiduo_mall/apps/meiduo_admin/serializers/skus.py", line 77, in update
+    SKU.objects.filter(id=instance.id).update(**validated_data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/query.py", line 647, in update
+    rows = query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1204, in execute_sql
+    cursor = super(SQLUpdateCompiler, self).execute_sql(result_type)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 899, in execute_sql
+    raise original_exception
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 889, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 893, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1103, in _read_query_result
+    result.read()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1396, in read
+    first_packet = self.connection._read_packet()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/viewsets.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/python/Desktop/admin/meiduo_mall/meiduo_mall/apps/meiduo_admin/serializers/skus.py", line 85, in update
+    transaction.savepoint_rollback(sid)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/transaction.py", line 66, in savepoint_rollback
+    get_connection(using).savepoint_rollback(sid)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/base/base.py", line 348, in savepoint_rollback
+    self._savepoint_rollback(sid)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/base/base.py", line 308, in _savepoint_rollback
+    cursor.execute(self.ops.savepoint_rollback_sql(sid))
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 59, in execute
+    self.db.validate_no_broken_transaction()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/base/base.py", line 448, in validate_no_broken_transaction
+    "An error occurred in the current transaction. You can't "
+django.db.transaction.TransactionManagementError: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+ERROR 2019-09-05 04:57:32,626 exception 135 Internal Server Error: /meiduo_admin/skus/2/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 893, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1103, in _read_query_result
+    result.read()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1396, in read
+    first_packet = self.connection._read_packet()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/python/Desktop/admin/meiduo_mall/meiduo_mall/apps/meiduo_admin/serializers/skus.py", line 77, in update
+    SKU.objects.filter(id=instance.id).update(**validated_data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/query.py", line 647, in update
+    rows = query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1204, in execute_sql
+    cursor = super(SQLUpdateCompiler, self).execute_sql(result_type)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 899, in execute_sql
+    raise original_exception
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 889, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 893, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1103, in _read_query_result
+    result.read()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1396, in read
+    first_packet = self.connection._read_packet()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/viewsets.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/python/Desktop/admin/meiduo_mall/meiduo_mall/apps/meiduo_admin/serializers/skus.py", line 85, in update
+    transaction.savepoint_rollback(sid)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/transaction.py", line 66, in savepoint_rollback
+    get_connection(using).savepoint_rollback(sid)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/base/base.py", line 348, in savepoint_rollback
+    self._savepoint_rollback(sid)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/base/base.py", line 308, in _savepoint_rollback
+    cursor.execute(self.ops.savepoint_rollback_sql(sid))
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 59, in execute
+    self.db.validate_no_broken_transaction()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/base/base.py", line 448, in validate_no_broken_transaction
+    "An error occurred in the current transaction. You can't "
+django.db.transaction.TransactionManagementError: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+ERROR 2019-09-05 04:57:32,922 basehttp 124 "PUT /meiduo_admin/skus/2/ HTTP/1.1" 500 26746
+ERROR 2019-09-05 04:57:32,923 basehttp 124 "PUT /meiduo_admin/skus/2/ HTTP/1.1" 500 26745
+ERROR 2019-09-05 04:57:32,937 basehttp 124 "PUT /meiduo_admin/skus/2/ HTTP/1.1" 500 26746
+ERROR 2019-09-05 04:57:40,980 exception 135 Internal Server Error: /meiduo_admin/skus/2/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 893, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1103, in _read_query_result
+    result.read()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1396, in read
+    first_packet = self.connection._read_packet()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/python/Desktop/admin/meiduo_mall/meiduo_mall/apps/meiduo_admin/serializers/skus.py", line 77, in update
+    SKU.objects.filter(id=instance.id).update(**validated_data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/query.py", line 647, in update
+    rows = query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1204, in execute_sql
+    cursor = super(SQLUpdateCompiler, self).execute_sql(result_type)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 899, in execute_sql
+    raise original_exception
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 889, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 893, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1103, in _read_query_result
+    result.read()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1396, in read
+    first_packet = self.connection._read_packet()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/viewsets.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/python/Desktop/admin/meiduo_mall/meiduo_mall/apps/meiduo_admin/serializers/skus.py", line 85, in update
+    transaction.savepoint_rollback(sid)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/transaction.py", line 66, in savepoint_rollback
+    get_connection(using).savepoint_rollback(sid)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/base/base.py", line 348, in savepoint_rollback
+    self._savepoint_rollback(sid)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/base/base.py", line 308, in _savepoint_rollback
+    cursor.execute(self.ops.savepoint_rollback_sql(sid))
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 59, in execute
+    self.db.validate_no_broken_transaction()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/base/base.py", line 448, in validate_no_broken_transaction
+    "An error occurred in the current transaction. You can't "
+django.db.transaction.TransactionManagementError: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+ERROR 2019-09-05 04:57:40,987 exception 135 Internal Server Error: /meiduo_admin/skus/2/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 893, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1103, in _read_query_result
+    result.read()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1396, in read
+    first_packet = self.connection._read_packet()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/python/Desktop/admin/meiduo_mall/meiduo_mall/apps/meiduo_admin/serializers/skus.py", line 77, in update
+    SKU.objects.filter(id=instance.id).update(**validated_data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/query.py", line 647, in update
+    rows = query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1204, in execute_sql
+    cursor = super(SQLUpdateCompiler, self).execute_sql(result_type)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 899, in execute_sql
+    raise original_exception
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 889, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 893, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1103, in _read_query_result
+    result.read()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1396, in read
+    first_packet = self.connection._read_packet()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/viewsets.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/python/Desktop/admin/meiduo_mall/meiduo_mall/apps/meiduo_admin/serializers/skus.py", line 85, in update
+    transaction.savepoint_rollback(sid)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/transaction.py", line 66, in savepoint_rollback
+    get_connection(using).savepoint_rollback(sid)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/base/base.py", line 348, in savepoint_rollback
+    self._savepoint_rollback(sid)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/base/base.py", line 308, in _savepoint_rollback
+    cursor.execute(self.ops.savepoint_rollback_sql(sid))
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 59, in execute
+    self.db.validate_no_broken_transaction()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/base/base.py", line 448, in validate_no_broken_transaction
+    "An error occurred in the current transaction. You can't "
+django.db.transaction.TransactionManagementError: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+ERROR 2019-09-05 04:57:41,031 basehttp 124 "PUT /meiduo_admin/skus/2/ HTTP/1.1" 500 26746
+ERROR 2019-09-05 04:57:41,042 basehttp 124 "PUT /meiduo_admin/skus/2/ HTTP/1.1" 500 26746
+ERROR 2019-09-05 04:58:24,107 exception 135 Internal Server Error: /meiduo_admin/skus/2/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 893, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1103, in _read_query_result
+    result.read()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1396, in read
+    first_packet = self.connection._read_packet()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/python/Desktop/admin/meiduo_mall/meiduo_mall/apps/meiduo_admin/serializers/skus.py", line 77, in update
+    SKU.objects.filter(id=instance.id).update(**validated_data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/query.py", line 647, in update
+    rows = query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1204, in execute_sql
+    cursor = super(SQLUpdateCompiler, self).execute_sql(result_type)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 899, in execute_sql
+    raise original_exception
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 889, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 893, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1103, in _read_query_result
+    result.read()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1396, in read
+    first_packet = self.connection._read_packet()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/viewsets.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/python/Desktop/admin/meiduo_mall/meiduo_mall/apps/meiduo_admin/serializers/skus.py", line 85, in update
+    transaction.savepoint_rollback(sid)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/transaction.py", line 66, in savepoint_rollback
+    get_connection(using).savepoint_rollback(sid)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/base/base.py", line 348, in savepoint_rollback
+    self._savepoint_rollback(sid)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/base/base.py", line 308, in _savepoint_rollback
+    cursor.execute(self.ops.savepoint_rollback_sql(sid))
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 59, in execute
+    self.db.validate_no_broken_transaction()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/base/base.py", line 448, in validate_no_broken_transaction
+    "An error occurred in the current transaction. You can't "
+django.db.transaction.TransactionManagementError: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+ERROR 2019-09-05 04:58:24,114 exception 135 Internal Server Error: /meiduo_admin/skus/2/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 893, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1103, in _read_query_result
+    result.read()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1396, in read
+    first_packet = self.connection._read_packet()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/python/Desktop/admin/meiduo_mall/meiduo_mall/apps/meiduo_admin/serializers/skus.py", line 77, in update
+    SKU.objects.filter(id=instance.id).update(**validated_data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/query.py", line 647, in update
+    rows = query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1204, in execute_sql
+    cursor = super(SQLUpdateCompiler, self).execute_sql(result_type)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 899, in execute_sql
+    raise original_exception
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 889, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 893, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1103, in _read_query_result
+    result.read()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1396, in read
+    first_packet = self.connection._read_packet()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/viewsets.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/python/Desktop/admin/meiduo_mall/meiduo_mall/apps/meiduo_admin/serializers/skus.py", line 85, in update
+    transaction.savepoint_rollback(sid)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/transaction.py", line 66, in savepoint_rollback
+    get_connection(using).savepoint_rollback(sid)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/base/base.py", line 348, in savepoint_rollback
+    self._savepoint_rollback(sid)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/base/base.py", line 308, in _savepoint_rollback
+    cursor.execute(self.ops.savepoint_rollback_sql(sid))
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 59, in execute
+    self.db.validate_no_broken_transaction()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/base/base.py", line 448, in validate_no_broken_transaction
+    "An error occurred in the current transaction. You can't "
+django.db.transaction.TransactionManagementError: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+ERROR 2019-09-05 04:58:24,115 exception 135 Internal Server Error: /meiduo_admin/skus/2/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 893, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1103, in _read_query_result
+    result.read()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1396, in read
+    first_packet = self.connection._read_packet()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/python/Desktop/admin/meiduo_mall/meiduo_mall/apps/meiduo_admin/serializers/skus.py", line 77, in update
+    SKU.objects.filter(id=instance.id).update(**validated_data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/query.py", line 647, in update
+    rows = query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1204, in execute_sql
+    cursor = super(SQLUpdateCompiler, self).execute_sql(result_type)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 899, in execute_sql
+    raise original_exception
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 889, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 893, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1103, in _read_query_result
+    result.read()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1396, in read
+    first_packet = self.connection._read_packet()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/viewsets.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/python/Desktop/admin/meiduo_mall/meiduo_mall/apps/meiduo_admin/serializers/skus.py", line 85, in update
+    transaction.savepoint_rollback(sid)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/transaction.py", line 66, in savepoint_rollback
+    get_connection(using).savepoint_rollback(sid)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/base/base.py", line 348, in savepoint_rollback
+    self._savepoint_rollback(sid)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/base/base.py", line 308, in _savepoint_rollback
+    cursor.execute(self.ops.savepoint_rollback_sql(sid))
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 59, in execute
+    self.db.validate_no_broken_transaction()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/base/base.py", line 448, in validate_no_broken_transaction
+    "An error occurred in the current transaction. You can't "
+django.db.transaction.TransactionManagementError: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+ERROR 2019-09-05 04:58:24,181 basehttp 124 "PUT /meiduo_admin/skus/2/ HTTP/1.1" 500 26745
+ERROR 2019-09-05 04:58:24,183 basehttp 124 "PUT /meiduo_admin/skus/2/ HTTP/1.1" 500 26746
+ERROR 2019-09-05 04:58:24,186 basehttp 124 "PUT /meiduo_admin/skus/2/ HTTP/1.1" 500 26746
+ERROR 2019-09-05 04:58:32,110 exception 135 Internal Server Error: /meiduo_admin/skus/2/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 893, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1103, in _read_query_result
+    result.read()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1396, in read
+    first_packet = self.connection._read_packet()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/python/Desktop/admin/meiduo_mall/meiduo_mall/apps/meiduo_admin/serializers/skus.py", line 77, in update
+    SKU.objects.filter(id=instance.id).update(**validated_data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/query.py", line 647, in update
+    rows = query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1204, in execute_sql
+    cursor = super(SQLUpdateCompiler, self).execute_sql(result_type)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 899, in execute_sql
+    raise original_exception
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 889, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 893, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1103, in _read_query_result
+    result.read()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1396, in read
+    first_packet = self.connection._read_packet()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/viewsets.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/python/Desktop/admin/meiduo_mall/meiduo_mall/apps/meiduo_admin/serializers/skus.py", line 85, in update
+    transaction.savepoint_rollback(sid)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/transaction.py", line 66, in savepoint_rollback
+    get_connection(using).savepoint_rollback(sid)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/base/base.py", line 348, in savepoint_rollback
+    self._savepoint_rollback(sid)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/base/base.py", line 308, in _savepoint_rollback
+    cursor.execute(self.ops.savepoint_rollback_sql(sid))
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 59, in execute
+    self.db.validate_no_broken_transaction()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/base/base.py", line 448, in validate_no_broken_transaction
+    "An error occurred in the current transaction. You can't "
+django.db.transaction.TransactionManagementError: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+ERROR 2019-09-05 04:58:32,116 exception 135 Internal Server Error: /meiduo_admin/skus/2/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 893, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1103, in _read_query_result
+    result.read()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1396, in read
+    first_packet = self.connection._read_packet()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/python/Desktop/admin/meiduo_mall/meiduo_mall/apps/meiduo_admin/serializers/skus.py", line 77, in update
+    SKU.objects.filter(id=instance.id).update(**validated_data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/query.py", line 647, in update
+    rows = query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1204, in execute_sql
+    cursor = super(SQLUpdateCompiler, self).execute_sql(result_type)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 899, in execute_sql
+    raise original_exception
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 889, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 893, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1103, in _read_query_result
+    result.read()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1396, in read
+    first_packet = self.connection._read_packet()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/viewsets.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/python/Desktop/admin/meiduo_mall/meiduo_mall/apps/meiduo_admin/serializers/skus.py", line 85, in update
+    transaction.savepoint_rollback(sid)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/transaction.py", line 66, in savepoint_rollback
+    get_connection(using).savepoint_rollback(sid)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/base/base.py", line 348, in savepoint_rollback
+    self._savepoint_rollback(sid)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/base/base.py", line 308, in _savepoint_rollback
+    cursor.execute(self.ops.savepoint_rollback_sql(sid))
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 59, in execute
+    self.db.validate_no_broken_transaction()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/base/base.py", line 448, in validate_no_broken_transaction
+    "An error occurred in the current transaction. You can't "
+django.db.transaction.TransactionManagementError: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+ERROR 2019-09-05 04:58:32,144 basehttp 124 "PUT /meiduo_admin/skus/2/ HTTP/1.1" 500 26746
+ERROR 2019-09-05 04:58:32,171 basehttp 124 "PUT /meiduo_admin/skus/2/ HTTP/1.1" 500 26746
+INFO 2019-09-05 05:01:04,523 basehttp 124 "GET /meiduo_admin/goods/simple/ HTTP/1.1" 200 138
+INFO 2019-09-05 05:01:04,629 basehttp 124 "GET /meiduo_admin/goods/simple/ HTTP/1.1" 200 138
+INFO 2019-09-05 05:01:04,672 basehttp 124 "GET /meiduo_admin/skus/categories/ HTTP/1.1" 200 56271
+INFO 2019-09-05 05:01:04,676 basehttp 124 "GET /meiduo_admin/skus/?page=1&pagesize=10&keyword= HTTP/1.1" 200 7098
+INFO 2019-09-05 05:01:04,821 basehttp 124 "GET /meiduo_admin/skus/categories/ HTTP/1.1" 200 56271
+INFO 2019-09-05 05:01:06,442 basehttp 124 "GET /meiduo_admin/goods/1/specs/ HTTP/1.1" 200 1468
+INFO 2019-09-05 05:01:06,474 basehttp 124 "GET /meiduo_admin/skus/2/ HTTP/1.1" 200 1997
+INFO 2019-09-05 05:01:06,781 basehttp 124 "GET /meiduo_admin/goods/1/specs/ HTTP/1.1" 200 1468
+ERROR 2019-09-05 05:02:30,299 exception 135 Internal Server Error: /meiduo_admin/skus/2/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 893, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1103, in _read_query_result
+    result.read()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1396, in read
+    first_packet = self.connection._read_packet()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/python/Desktop/admin/meiduo_mall/meiduo_mall/apps/meiduo_admin/serializers/skus.py", line 75, in update
+    SKU.objects.filter(id=instance.id).update(**validated_data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/query.py", line 647, in update
+    rows = query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1204, in execute_sql
+    cursor = super(SQLUpdateCompiler, self).execute_sql(result_type)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 899, in execute_sql
+    raise original_exception
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 889, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 893, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1103, in _read_query_result
+    result.read()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1396, in read
+    first_packet = self.connection._read_packet()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/viewsets.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/python/Desktop/admin/meiduo_mall/meiduo_mall/apps/meiduo_admin/serializers/skus.py", line 81, in update
+    transaction.savepoint_rollback(save_point)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/transaction.py", line 66, in savepoint_rollback
+    get_connection(using).savepoint_rollback(sid)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/base/base.py", line 348, in savepoint_rollback
+    self._savepoint_rollback(sid)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/base/base.py", line 308, in _savepoint_rollback
+    cursor.execute(self.ops.savepoint_rollback_sql(sid))
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 59, in execute
+    self.db.validate_no_broken_transaction()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/base/base.py", line 448, in validate_no_broken_transaction
+    "An error occurred in the current transaction. You can't "
+django.db.transaction.TransactionManagementError: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+ERROR 2019-09-05 05:02:30,327 basehttp 124 "PUT /meiduo_admin/skus/2/ HTTP/1.1" 500 26752
+ERROR 2019-09-05 05:02:54,305 exception 135 Internal Server Error: /meiduo_admin/skus/2/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 893, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1103, in _read_query_result
+    result.read()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1396, in read
+    first_packet = self.connection._read_packet()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/python/Desktop/admin/meiduo_mall/meiduo_mall/apps/meiduo_admin/serializers/skus.py", line 75, in update
+    SKU.objects.filter(id=instance.id).update(**validated_data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/query.py", line 647, in update
+    rows = query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1204, in execute_sql
+    cursor = super(SQLUpdateCompiler, self).execute_sql(result_type)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 899, in execute_sql
+    raise original_exception
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 889, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 893, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1103, in _read_query_result
+    result.read()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1396, in read
+    first_packet = self.connection._read_packet()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/viewsets.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/python/Desktop/admin/meiduo_mall/meiduo_mall/apps/meiduo_admin/serializers/skus.py", line 81, in update
+    transaction.savepoint_rollback(save_point)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/transaction.py", line 66, in savepoint_rollback
+    get_connection(using).savepoint_rollback(sid)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/base/base.py", line 348, in savepoint_rollback
+    self._savepoint_rollback(sid)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/base/base.py", line 308, in _savepoint_rollback
+    cursor.execute(self.ops.savepoint_rollback_sql(sid))
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 59, in execute
+    self.db.validate_no_broken_transaction()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/base/base.py", line 448, in validate_no_broken_transaction
+    "An error occurred in the current transaction. You can't "
+django.db.transaction.TransactionManagementError: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+ERROR 2019-09-05 05:02:54,331 basehttp 124 "PUT /meiduo_admin/skus/2/ HTTP/1.1" 500 26753
+INFO 2019-09-05 05:03:35,260 basehttp 124 "GET /meiduo_admin/goods/simple/ HTTP/1.1" 200 138
+INFO 2019-09-05 05:03:35,286 basehttp 124 "GET /meiduo_admin/goods/simple/ HTTP/1.1" 200 138
+INFO 2019-09-05 05:03:35,434 basehttp 124 "GET /meiduo_admin/skus/categories/ HTTP/1.1" 200 56271
+INFO 2019-09-05 05:03:35,440 basehttp 124 "GET /meiduo_admin/skus/?page=1&pagesize=10&keyword= HTTP/1.1" 200 7098
+INFO 2019-09-05 05:03:35,523 basehttp 124 "GET /meiduo_admin/skus/categories/ HTTP/1.1" 200 56271
+INFO 2019-09-05 05:03:38,432 basehttp 124 "GET /meiduo_admin/goods/1/specs/ HTTP/1.1" 200 1468
+INFO 2019-09-05 05:03:38,479 basehttp 124 "GET /meiduo_admin/skus/2/ HTTP/1.1" 200 1997
+INFO 2019-09-05 05:03:38,735 basehttp 124 "GET /meiduo_admin/goods/1/specs/ HTTP/1.1" 200 1468
+INFO 2019-09-05 05:04:45,179 basehttp 124 "GET /meiduo_admin/goods/simple/ HTTP/1.1" 200 138
+INFO 2019-09-05 05:04:45,292 basehttp 124 "GET /meiduo_admin/goods/simple/ HTTP/1.1" 200 138
+INFO 2019-09-05 05:04:45,387 basehttp 124 "GET /meiduo_admin/skus/?page=1&pagesize=10&keyword= HTTP/1.1" 200 7098
+INFO 2019-09-05 05:04:45,422 basehttp 124 "GET /meiduo_admin/skus/categories/ HTTP/1.1" 200 56271
+INFO 2019-09-05 05:04:45,589 basehttp 124 "GET /meiduo_admin/skus/categories/ HTTP/1.1" 200 56271
+INFO 2019-09-05 05:04:46,503 basehttp 124 "GET /meiduo_admin/goods/1/specs/ HTTP/1.1" 200 1468
+INFO 2019-09-05 05:04:46,596 basehttp 124 "GET /meiduo_admin/skus/2/ HTTP/1.1" 200 1997
+INFO 2019-09-05 05:04:46,938 basehttp 124 "GET /meiduo_admin/goods/1/specs/ HTTP/1.1" 200 1468
+ERROR 2019-09-05 05:06:03,832 exception 135 Internal Server Error: /meiduo_admin/skus/2/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 893, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1103, in _read_query_result
+    result.read()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1396, in read
+    first_packet = self.connection._read_packet()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/python/Desktop/admin/meiduo_mall/meiduo_mall/apps/meiduo_admin/serializers/skus.py", line 77, in update
+    SKU.objects.filter(id=instance.id).update(**validated_data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/query.py", line 647, in update
+    rows = query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1204, in execute_sql
+    cursor = super(SQLUpdateCompiler, self).execute_sql(result_type)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 899, in execute_sql
+    raise original_exception
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 889, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 893, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1103, in _read_query_result
+    result.read()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1396, in read
+    first_packet = self.connection._read_packet()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/viewsets.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/python/Desktop/admin/meiduo_mall/meiduo_mall/apps/meiduo_admin/serializers/skus.py", line 85, in update
+    transaction.savepoint_rollback(sid)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/transaction.py", line 66, in savepoint_rollback
+    get_connection(using).savepoint_rollback(sid)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/base/base.py", line 348, in savepoint_rollback
+    self._savepoint_rollback(sid)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/base/base.py", line 308, in _savepoint_rollback
+    cursor.execute(self.ops.savepoint_rollback_sql(sid))
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 59, in execute
+    self.db.validate_no_broken_transaction()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/base/base.py", line 448, in validate_no_broken_transaction
+    "An error occurred in the current transaction. You can't "
+django.db.transaction.TransactionManagementError: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+ERROR 2019-09-05 05:06:03,864 basehttp 124 "PUT /meiduo_admin/skus/2/ HTTP/1.1" 500 26745
+ERROR 2019-09-05 05:06:04,832 exception 135 Internal Server Error: /meiduo_admin/skus/2/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 893, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1103, in _read_query_result
+    result.read()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1396, in read
+    first_packet = self.connection._read_packet()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+pymysql.err.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/python/Desktop/admin/meiduo_mall/meiduo_mall/apps/meiduo_admin/serializers/skus.py", line 77, in update
+    SKU.objects.filter(id=instance.id).update(**validated_data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/query.py", line 647, in update
+    rows = query.get_compiler(self.db).execute_sql(CURSOR)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 1204, in execute_sql
+    cursor = super(SQLUpdateCompiler, self).execute_sql(result_type)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 899, in execute_sql
+    raise original_exception
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/models/sql/compiler.py", line 889, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/utils/six.py", line 685, in reraise
+    raise value.with_traceback(tb)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/mysql/base.py", line 101, in execute
+    return self.cursor.execute(query, args)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 170, in execute
+    result = self._query(query)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/cursors.py", line 328, in _query
+    conn.query(q)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 893, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1103, in _read_query_result
+    result.read()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1396, in read
+    first_packet = self.connection._read_packet()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 1059, in _read_packet
+    packet.check_error()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/connections.py", line 384, in check_error
+    err.raise_mysql_exception(self._data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/pymysql/err.py", line 109, in raise_mysql_exception
+    raise errorclass(errno, errval)
+django.db.utils.InternalError: (1205, 'Lock wait timeout exceeded; try restarting transaction')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/viewsets.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/mixins.py", line 70, in update
+    self.perform_update(serializer)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/mixins.py", line 80, in perform_update
+    serializer.save()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 209, in save
+    self.instance = self.update(self.instance, validated_data)
+  File "/home/python/Desktop/admin/meiduo_mall/meiduo_mall/apps/meiduo_admin/serializers/skus.py", line 85, in update
+    transaction.savepoint_rollback(sid)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/transaction.py", line 66, in savepoint_rollback
+    get_connection(using).savepoint_rollback(sid)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/base/base.py", line 348, in savepoint_rollback
+    self._savepoint_rollback(sid)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/base/base.py", line 308, in _savepoint_rollback
+    cursor.execute(self.ops.savepoint_rollback_sql(sid))
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/utils.py", line 59, in execute
+    self.db.validate_no_broken_transaction()
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/db/backends/base/base.py", line 448, in validate_no_broken_transaction
+    "An error occurred in the current transaction. You can't "
+django.db.transaction.TransactionManagementError: An error occurred in the current transaction. You can't execute queries until the end of the 'atomic' block.
+ERROR 2019-09-05 05:06:04,855 basehttp 124 "PUT /meiduo_admin/skus/2/ HTTP/1.1" 500 26746
+INFO 2019-09-05 05:06:55,226 basehttp 124 "OPTIONS /meiduo_admin/skus/categories/ HTTP/1.1" 200 0
+INFO 2019-09-05 05:06:55,234 basehttp 124 "OPTIONS /meiduo_admin/goods/simple/ HTTP/1.1" 200 0
+INFO 2019-09-05 05:06:55,242 basehttp 124 "OPTIONS /meiduo_admin/skus/categories/ HTTP/1.1" 200 0
+INFO 2019-09-05 05:06:55,251 basehttp 124 "OPTIONS /meiduo_admin/goods/simple/ HTTP/1.1" 200 0
+INFO 2019-09-05 05:06:55,253 basehttp 124 "OPTIONS /meiduo_admin/skus/?page=1&pagesize=10&keyword= HTTP/1.1" 200 0
+INFO 2019-09-05 05:06:55,318 basehttp 124 "GET /meiduo_admin/goods/simple/ HTTP/1.1" 200 138
+INFO 2019-09-05 05:06:55,428 basehttp 124 "GET /meiduo_admin/goods/simple/ HTTP/1.1" 200 138
+INFO 2019-09-05 05:06:55,439 basehttp 124 "GET /meiduo_admin/skus/categories/ HTTP/1.1" 200 56271
+INFO 2019-09-05 05:06:55,449 basehttp 124 "GET /meiduo_admin/skus/?page=1&pagesize=10&keyword= HTTP/1.1" 200 7098
+INFO 2019-09-05 05:06:55,492 basehttp 124 "GET /meiduo_admin/skus/categories/ HTTP/1.1" 200 56271
+INFO 2019-09-05 05:06:56,885 basehttp 124 "OPTIONS /meiduo_admin/goods/1/specs/ HTTP/1.1" 200 0
+INFO 2019-09-05 05:06:56,911 basehttp 124 "GET /meiduo_admin/goods/1/specs/ HTTP/1.1" 200 1468
+INFO 2019-09-05 05:06:56,923 basehttp 124 "OPTIONS /meiduo_admin/skus/2/ HTTP/1.1" 200 0
+INFO 2019-09-05 05:06:56,947 basehttp 124 "GET /meiduo_admin/skus/2/ HTTP/1.1" 200 1997
+INFO 2019-09-05 05:06:57,203 basehttp 124 "GET /meiduo_admin/goods/1/specs/ HTTP/1.1" 200 1468
+INFO 2019-09-05 05:08:18,491 basehttp 124 "OPTIONS /meiduo_admin/skus/?page=3&pagesize=10&keyword= HTTP/1.1" 200 0
+INFO 2019-09-05 05:08:18,614 basehttp 124 "GET /meiduo_admin/skus/?page=3&pagesize=10&keyword= HTTP/1.1" 200 399
+INFO 2019-09-05 05:08:35,138 basehttp 124 "OPTIONS /meiduo_admin/goods/3/specs/ HTTP/1.1" 200 0
+INFO 2019-09-05 05:08:35,182 basehttp 124 "GET /meiduo_admin/goods/3/specs/ HTTP/1.1" 200 1162
+INFO 2019-09-05 05:08:37,262 basehttp 124 "OPTIONS /meiduo_admin/goods/2/specs/ HTTP/1.1" 200 0
+INFO 2019-09-05 05:08:37,287 basehttp 124 "GET /meiduo_admin/goods/2/specs/ HTTP/1.1" 200 885
+INFO 2019-09-05 05:08:40,791 basehttp 124 "OPTIONS /meiduo_admin/skus/ HTTP/1.1" 200 0
+INFO 2019-09-05 05:37:14,986 basehttp 124 "OPTIONS /meiduo_admin/skus/categories/ HTTP/1.1" 200 0
+INFO 2019-09-05 05:37:14,990 basehttp 124 "OPTIONS /meiduo_admin/goods/simple/ HTTP/1.1" 200 0
+INFO 2019-09-05 05:37:14,992 basehttp 124 "OPTIONS /meiduo_admin/skus/categories/ HTTP/1.1" 200 0
+INFO 2019-09-05 05:37:14,994 basehttp 124 "OPTIONS /meiduo_admin/goods/simple/ HTTP/1.1" 200 0
+INFO 2019-09-05 05:37:14,996 basehttp 124 "OPTIONS /meiduo_admin/skus/?page=1&pagesize=10&keyword= HTTP/1.1" 200 0
+INFO 2019-09-05 05:37:15,156 basehttp 124 "GET /meiduo_admin/goods/simple/ HTTP/1.1" 200 138
+INFO 2019-09-05 05:37:15,232 basehttp 124 "GET /meiduo_admin/goods/simple/ HTTP/1.1" 200 138
+INFO 2019-09-05 05:37:15,342 basehttp 124 "GET /meiduo_admin/skus/?page=1&pagesize=10&keyword= HTTP/1.1" 200 7098
+INFO 2019-09-05 05:37:15,345 basehttp 124 "GET /meiduo_admin/skus/categories/ HTTP/1.1" 200 56271
+INFO 2019-09-05 05:37:15,458 basehttp 124 "GET /meiduo_admin/skus/categories/ HTTP/1.1" 200 56271
+INFO 2019-09-05 05:37:23,349 basehttp 124 "OPTIONS /meiduo_admin/permission/content_types/ HTTP/1.1" 200 0
+INFO 2019-09-05 05:37:23,350 basehttp 124 "OPTIONS /meiduo_admin/permission/content_types/ HTTP/1.1" 200 0
+INFO 2019-09-05 05:37:23,351 basehttp 124 "OPTIONS /meiduo_admin/permission/perms/?page=1&pagesize=10 HTTP/1.1" 200 0
+ERROR 2019-09-05 05:37:23,367 exception 135 Internal Server Error: /meiduo_admin/permission/content_types/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/fields.py", line 441, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/fields.py", line 100, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'QuerySet' object has no attribute 'app_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/viewsets.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/admin/meiduo_mall/meiduo_mall/apps/meiduo_admin/views/permissions.py", line 45, in content_type
+    return Response(ser.data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 560, in data
+    ret = super(Serializer, self).data
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 514, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/fields.py", line 462, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `app_label` on serializer `ContentTypeSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `QuerySet` instance.
+Original exception text was: 'QuerySet' object has no attribute 'app_label'.
+INFO 2019-09-05 05:37:23,379 basehttp 124 "GET /meiduo_admin/permission/perms/?page=1&pagesize=10 HTTP/1.1" 200 843
+ERROR 2019-09-05 05:37:23,583 basehttp 124 "GET /meiduo_admin/permission/content_types/ HTTP/1.1" 500 21756
+ERROR 2019-09-05 05:37:23,603 exception 135 Internal Server Error: /meiduo_admin/permission/content_types/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/fields.py", line 441, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/fields.py", line 100, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'QuerySet' object has no attribute 'app_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/viewsets.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/admin/meiduo_mall/meiduo_mall/apps/meiduo_admin/views/permissions.py", line 45, in content_type
+    return Response(ser.data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 560, in data
+    ret = super(Serializer, self).data
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 514, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/fields.py", line 462, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `app_label` on serializer `ContentTypeSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `QuerySet` instance.
+Original exception text was: 'QuerySet' object has no attribute 'app_label'.
+ERROR 2019-09-05 05:37:23,623 basehttp 124 "GET /meiduo_admin/permission/content_types/ HTTP/1.1" 500 21756
+ERROR 2019-09-05 05:37:34,971 exception 135 Internal Server Error: /meiduo_admin/permission/content_types/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/fields.py", line 441, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/fields.py", line 100, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'QuerySet' object has no attribute 'app_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/viewsets.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/admin/meiduo_mall/meiduo_mall/apps/meiduo_admin/views/permissions.py", line 45, in content_type
+    return Response(ser.data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 560, in data
+    ret = super(Serializer, self).data
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 514, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/fields.py", line 462, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `app_label` on serializer `ContentTypeSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `QuerySet` instance.
+Original exception text was: 'QuerySet' object has no attribute 'app_label'.
+INFO 2019-09-05 05:37:35,004 basehttp 124 "GET /meiduo_admin/permission/perms/?page=1&pagesize=10 HTTP/1.1" 200 843
+ERROR 2019-09-05 05:37:35,079 basehttp 124 "GET /meiduo_admin/permission/content_types/ HTTP/1.1" 500 21789
+ERROR 2019-09-05 05:37:35,115 exception 135 Internal Server Error: /meiduo_admin/permission/content_types/
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/fields.py", line 441, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/fields.py", line 100, in get_attribute
+    instance = getattr(instance, attr)
+AttributeError: 'QuerySet' object has no attribute 'app_label'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/django/views/decorators/csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/viewsets.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 483, in dispatch
+    response = self.handle_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 443, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/views.py", line 480, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/home/python/Desktop/admin/meiduo_mall/meiduo_mall/apps/meiduo_admin/views/permissions.py", line 45, in content_type
+    return Response(ser.data)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 560, in data
+    ret = super(Serializer, self).data
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 262, in data
+    self._data = self.to_representation(self.instance)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/serializers.py", line 514, in to_representation
+    attribute = field.get_attribute(instance)
+  File "/home/python/.virtualenvs/mall/lib/python3.5/site-packages/rest_framework/fields.py", line 462, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `app_label` on serializer `ContentTypeSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `QuerySet` instance.
+Original exception text was: 'QuerySet' object has no attribute 'app_label'.
+ERROR 2019-09-05 05:37:35,211 basehttp 124 "GET /meiduo_admin/permission/content_types/ HTTP/1.1" 500 21789
+INFO 2019-09-05 05:38:55,849 basehttp 124 "GET /meiduo_admin/permission/perms/?page=1&pagesize=10 HTTP/1.1" 200 843
+INFO 2019-09-05 05:38:55,851 basehttp 124 "GET /meiduo_admin/permission/content_types/ HTTP/1.1" 200 1278
+INFO 2019-09-05 05:38:55,988 basehttp 124 "GET /meiduo_admin/permission/content_types/ HTTP/1.1" 200 1278
+INFO 2019-09-05 05:57:07,042 basehttp 124 "OPTIONS /meiduo_admin/permission/content_types/ HTTP/1.1" 200 0
+INFO 2019-09-05 05:57:07,044 basehttp 124 "OPTIONS /meiduo_admin/permission/content_types/ HTTP/1.1" 200 0
+INFO 2019-09-05 05:57:07,045 basehttp 124 "OPTIONS /meiduo_admin/permission/perms/?page=1&pagesize=10 HTTP/1.1" 200 0
+INFO 2019-09-05 05:57:07,306 basehttp 124 "GET /meiduo_admin/permission/perms/?page=1&pagesize=10 HTTP/1.1" 200 843
+INFO 2019-09-05 05:57:07,313 basehttp 124 "GET /meiduo_admin/permission/content_types/ HTTP/1.1" 200 1813
+INFO 2019-09-05 05:57:07,340 basehttp 124 "GET /meiduo_admin/permission/content_types/ HTTP/1.1" 200 1813
+INFO 2019-09-05 06:39:21,480 basehttp 124 "OPTIONS /meiduo_admin/permission/content_types/ HTTP/1.1" 200 0
+INFO 2019-09-05 06:39:21,482 basehttp 124 "OPTIONS /meiduo_admin/permission/content_types/ HTTP/1.1" 200 0
+INFO 2019-09-05 06:39:21,483 basehttp 124 "OPTIONS /meiduo_admin/permission/perms/?page=1&pagesize=10 HTTP/1.1" 200 0
+INFO 2019-09-05 06:39:21,755 basehttp 124 "GET /meiduo_admin/permission/perms/?page=1&pagesize=10 HTTP/1.1" 200 843
+INFO 2019-09-05 06:39:21,760 basehttp 124 "GET /meiduo_admin/permission/content_types/ HTTP/1.1" 200 1813
+INFO 2019-09-05 06:39:21,794 basehttp 124 "GET /meiduo_admin/permission/content_types/ HTTP/1.1" 200 1813
+INFO 2019-09-05 06:43:16,990 basehttp 124 "OPTIONS /meiduo_admin/permission/perms/ HTTP/1.1" 200 0
+INFO 2019-09-05 06:43:17,011 basehttp 124 "POST /meiduo_admin/permission/perms/ HTTP/1.1" 201 68
+INFO 2019-09-05 06:43:17,098 basehttp 124 "GET /meiduo_admin/permission/perms/?page=1&pagesize=10 HTTP/1.1" 200 843
+INFO 2019-09-05 06:43:20,753 basehttp 124 "OPTIONS /meiduo_admin/permission/perms/?page=8&pagesize=10 HTTP/1.1" 200 0
+INFO 2019-09-05 06:43:20,775 basehttp 124 "GET /meiduo_admin/permission/perms/?page=8&pagesize=10 HTTP/1.1" 200 593

@@ -39,6 +39,9 @@ urlpatterns = [
 
     # ------------------------ sku路由 ---------------------------------
     url(r'^goods/(?P<pk>\d+)/specs/$', SkuView.as_view({'get': 'specs'})),
+
+    # ------------------------ 权限类型路由 ---------------------------------
+    url(r'^permission/content_types/$', PermissionsView.as_view({'get': 'content_type'})),
 ]
 
 # ------------------------ 规格表spu路由 ---------------------------------

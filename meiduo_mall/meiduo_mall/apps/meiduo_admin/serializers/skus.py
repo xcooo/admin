@@ -78,7 +78,7 @@ class SkuSerializer(serializers.ModelSerializer):
 
                 # 2、更新SKU具体规格表
                 for spec in specs:
-                    # SKUSpecification.objects.filter(sku=instance).update(**spec)
+                    # SKUSpecification.objects.filter(sku=instance,spec_id=spec['spec_id']).update(**spec)
                     SKUSpecification.objects.create(sku=instance, spec_id=spec['spec_id'], option_id=spec['option_id'])
             except:
                 # 捕获异常，说明数据库操作失败，进行回滚
