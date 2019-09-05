@@ -21,3 +21,12 @@ class AdminSerialzier(serializers.ModelSerializer):
                 'write_only':True
             }
         }
+
+    # 父类保存数据库的方法不满足需求, 需要重写
+    def create(self, validated_data):
+        user = super(AdminSerialzier, self).create(validated_data)
+        user.is_staff = True
+        # 密码加密
+        user.set_password(validated_data['password'])
+        user.save()
+        return user
