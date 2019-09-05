@@ -19073,3 +19073,58 @@ WARNING 2019-09-05 03:55:31,886 base 152 Not Found: /meiduo_admin/orders/undefin
 WARNING 2019-09-05 03:55:31,888 basehttp 124 "GET /meiduo_admin/orders/undefined/ HTTP/1.1" 404 23
 INFO 2019-09-05 03:56:19,079 basehttp 124 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 975
 INFO 2019-09-05 03:56:20,280 basehttp 124 "GET /meiduo_admin/orders/20190406122652000000001/ HTTP/1.1" 200 676
+INFO 2019-09-05 04:02:47,760 basehttp 124 "OPTIONS /meiduo_admin/permission/content_types/ HTTP/1.1" 200 0
+INFO 2019-09-05 04:02:47,762 basehttp 124 "OPTIONS /meiduo_admin/permission/content_types/ HTTP/1.1" 200 0
+INFO 2019-09-05 04:02:47,762 basehttp 124 "OPTIONS /meiduo_admin/permission/perms/?page=1&pagesize=10 HTTP/1.1" 200 0
+WARNING 2019-09-05 04:02:47,788 base 152 Not Found: /meiduo_admin/permission/content_types/
+WARNING 2019-09-05 04:02:47,788 basehttp 124 "GET /meiduo_admin/permission/content_types/ HTTP/1.1" 404 17183
+WARNING 2019-09-05 04:02:47,808 base 152 Not Found: /meiduo_admin/permission/content_types/
+WARNING 2019-09-05 04:02:47,809 basehttp 124 "GET /meiduo_admin/permission/content_types/ HTTP/1.1" 404 17183
+WARNING 2019-09-05 04:02:47,866 base 152 Not Found: /meiduo_admin/permission/perms/
+WARNING 2019-09-05 04:02:47,867 basehttp 124 "GET /meiduo_admin/permission/perms/?page=1&pagesize=10 HTTP/1.1" 404 17182
+INFO 2019-09-05 04:02:49,470 basehttp 124 "OPTIONS /meiduo_admin/permission/simple/ HTTP/1.1" 200 0
+INFO 2019-09-05 04:02:49,471 basehttp 124 "OPTIONS /meiduo_admin/permission/simple/ HTTP/1.1" 200 0
+INFO 2019-09-05 04:02:49,474 basehttp 124 "OPTIONS /meiduo_admin/permission/groups/?page=1&pagesize=10 HTTP/1.1" 200 0
+WARNING 2019-09-05 04:02:49,494 base 152 Not Found: /meiduo_admin/permission/simple/
+WARNING 2019-09-05 04:02:49,502 basehttp 124 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 404 17162
+WARNING 2019-09-05 04:02:49,502 base 152 Not Found: /meiduo_admin/permission/simple/
+WARNING 2019-09-05 04:02:49,514 base 152 Not Found: /meiduo_admin/permission/groups/
+WARNING 2019-09-05 04:02:49,515 basehttp 124 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 404 17162
+WARNING 2019-09-05 04:02:49,516 basehttp 124 "GET /meiduo_admin/permission/groups/?page=1&pagesize=10 HTTP/1.1" 404 17185
+INFO 2019-09-05 04:02:50,335 basehttp 124 "OPTIONS /meiduo_admin/permission/groups/simple/ HTTP/1.1" 200 0
+WARNING 2019-09-05 04:02:50,354 base 152 Not Found: /meiduo_admin/permission/simple/
+INFO 2019-09-05 04:02:50,357 basehttp 124 "OPTIONS /meiduo_admin/permission/groups/simple/ HTTP/1.1" 200 0
+WARNING 2019-09-05 04:02:50,357 basehttp 124 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 404 17162
+INFO 2019-09-05 04:02:50,358 basehttp 124 "OPTIONS /meiduo_admin/permission/admins/?page=1&pagesize=10 HTTP/1.1" 200 0
+WARNING 2019-09-05 04:02:50,371 base 152 Not Found: /meiduo_admin/permission/groups/simple/
+WARNING 2019-09-05 04:02:50,372 basehttp 124 "GET /meiduo_admin/permission/groups/simple/ HTTP/1.1" 404 17183
+WARNING 2019-09-05 04:02:50,386 base 152 Not Found: /meiduo_admin/permission/admins/
+WARNING 2019-09-05 04:02:50,407 basehttp 124 "GET /meiduo_admin/permission/admins/?page=1&pagesize=10 HTTP/1.1" 404 17185
+WARNING 2019-09-05 04:02:50,408 base 152 Not Found: /meiduo_admin/permission/simple/
+WARNING 2019-09-05 04:02:50,409 basehttp 124 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 404 17162
+WARNING 2019-09-05 04:02:50,415 base 152 Not Found: /meiduo_admin/permission/groups/simple/
+WARNING 2019-09-05 04:02:50,415 basehttp 124 "GET /meiduo_admin/permission/groups/simple/ HTTP/1.1" 404 17183
+WARNING 2019-09-05 04:02:51,099 base 152 Not Found: /meiduo_admin/permission/content_types/
+WARNING 2019-09-05 04:02:51,114 base 152 Not Found: /meiduo_admin/permission/perms/
+WARNING 2019-09-05 04:02:51,115 basehttp 124 "GET /meiduo_admin/permission/content_types/ HTTP/1.1" 404 17183
+WARNING 2019-09-05 04:02:51,115 basehttp 124 "GET /meiduo_admin/permission/perms/?page=1&pagesize=10 HTTP/1.1" 404 17182
+WARNING 2019-09-05 04:02:51,128 base 152 Not Found: /meiduo_admin/permission/content_types/
+WARNING 2019-09-05 04:02:51,129 basehttp 124 "GET /meiduo_admin/permission/content_types/ HTTP/1.1" 404 17183
+INFO 2019-09-05 04:21:27,939 basehttp 124 "OPTIONS /meiduo_admin/permission/content_types/ HTTP/1.1" 200 0
+INFO 2019-09-05 04:21:27,941 basehttp 124 "OPTIONS /meiduo_admin/permission/content_types/ HTTP/1.1" 200 0
+INFO 2019-09-05 04:21:27,944 basehttp 124 "OPTIONS /meiduo_admin/permission/perms/?page=1&pagesize=10 HTTP/1.1" 200 0
+WARNING 2019-09-05 04:21:28,090 base 152 Not Found: /meiduo_admin/permission/perms/
+WARNING 2019-09-05 04:21:28,090 basehttp 124 "GET /meiduo_admin/permission/perms/?page=1&pagesize=10 HTTP/1.1" 404 23
+WARNING 2019-09-05 04:21:28,101 base 152 Not Found: /meiduo_admin/permission/content_types/
+WARNING 2019-09-05 04:21:28,102 basehttp 124 "GET /meiduo_admin/permission/content_types/ HTTP/1.1" 404 23
+WARNING 2019-09-05 04:21:28,135 base 152 Not Found: /meiduo_admin/permission/content_types/
+WARNING 2019-09-05 04:21:28,136 basehttp 124 "GET /meiduo_admin/permission/content_types/ HTTP/1.1" 404 23
+WARNING 2019-09-05 04:22:10,979 base 152 Not Found: /meiduo_admin/permission/content_types/
+WARNING 2019-09-05 04:22:10,985 basehttp 124 "GET /meiduo_admin/permission/content_types/ HTTP/1.1" 404 18496
+INFO 2019-09-05 04:22:10,997 basehttp 124 "GET /meiduo_admin/permission/perms/?page=1&pagesize=10 HTTP/1.1" 200 843
+WARNING 2019-09-05 04:22:11,023 base 152 Not Found: /meiduo_admin/permission/content_types/
+WARNING 2019-09-05 04:22:11,024 basehttp 124 "GET /meiduo_admin/permission/content_types/ HTTP/1.1" 404 18496
+INFO 2019-09-05 04:22:19,049 basehttp 124 "OPTIONS /meiduo_admin/permission/perms/?page=4&pagesize=10 HTTP/1.1" 200 0
+INFO 2019-09-05 04:22:19,074 basehttp 124 "GET /meiduo_admin/permission/perms/?page=4&pagesize=10 HTTP/1.1" 200 1007
+INFO 2019-09-05 04:22:22,933 basehttp 124 "OPTIONS /meiduo_admin/permission/perms/?page=8&pagesize=10 HTTP/1.1" 200 0
+INFO 2019-09-05 04:22:22,957 basehttp 124 "GET /meiduo_admin/permission/perms/?page=8&pagesize=10 HTTP/1.1" 200 524
