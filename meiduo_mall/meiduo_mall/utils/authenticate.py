@@ -10,8 +10,8 @@ class MeiduoModelBackend(ModelBackend):
         if request is None:
             # 后台登陆 判断是否为管理员
             try:
-                # is_superuser 判断用户是否为超级管理员
-                user = User.objects.get(username=username, is_superuser=True)
+                # is_superuser 判断用户是否为管理员
+                user = User.objects.get(username=username, is_staff=True)
             except:
                 return None
 

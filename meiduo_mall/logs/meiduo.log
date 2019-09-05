@@ -20998,3 +20998,33 @@ INFO 2019-09-05 07:52:44,809 basehttp 124 "OPTIONS /meiduo_admin/permission/grou
 INFO 2019-09-05 07:52:44,834 basehttp 124 "GET /meiduo_admin/permission/groups/?pagesize=10 HTTP/1.1" 200 293
 INFO 2019-09-05 07:52:47,296 basehttp 124 "OPTIONS /meiduo_admin/permission/groups/7/ HTTP/1.1" 200 0
 INFO 2019-09-05 07:52:47,401 basehttp 124 "GET /meiduo_admin/permission/groups/7/ HTTP/1.1" 200 49
+INFO 2019-09-05 07:55:07,184 basehttp 124 "GET /meiduo_admin/permission/groups/7/ HTTP/1.1" 200 49
+INFO 2019-09-05 07:55:10,516 basehttp 124 "PUT /meiduo_admin/permission/groups/7/ HTTP/1.1" 200 54
+INFO 2019-09-05 07:55:10,543 basehttp 124 "GET /meiduo_admin/permission/groups/?pagesize=10 HTTP/1.1" 200 298
+INFO 2019-09-05 07:55:12,607 basehttp 124 "GET /meiduo_admin/permission/groups/7/ HTTP/1.1" 200 54
+INFO 2019-09-05 08:05:45,892 basehttp 124 "OPTIONS /meiduo_admin/permission/simple/ HTTP/1.1" 200 0
+INFO 2019-09-05 08:05:45,894 basehttp 124 "OPTIONS /meiduo_admin/permission/groups/simple/ HTTP/1.1" 200 0
+INFO 2019-09-05 08:05:45,898 basehttp 124 "OPTIONS /meiduo_admin/permission/simple/ HTTP/1.1" 200 0
+INFO 2019-09-05 08:05:45,902 basehttp 124 "OPTIONS /meiduo_admin/permission/groups/simple/ HTTP/1.1" 200 0
+INFO 2019-09-05 08:05:45,912 basehttp 124 "OPTIONS /meiduo_admin/permission/admins/?page=1&pagesize=10 HTTP/1.1" 200 0
+WARNING 2019-09-05 08:05:45,951 base 152 Not Found: /meiduo_admin/permission/groups/simple/
+WARNING 2019-09-05 08:05:45,959 basehttp 124 "GET /meiduo_admin/permission/groups/simple/ HTTP/1.1" 404 23
+INFO 2019-09-05 08:05:46,001 basehttp 124 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 200 6785
+WARNING 2019-09-05 08:05:46,004 base 152 Not Found: /meiduo_admin/permission/groups/simple/
+WARNING 2019-09-05 08:05:46,006 basehttp 124 "GET /meiduo_admin/permission/groups/simple/ HTTP/1.1" 404 23
+INFO 2019-09-05 08:05:46,018 basehttp 124 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 200 6785
+INFO 2019-09-05 08:05:46,022 basehttp 124 "GET /meiduo_admin/permission/admins/?page=1&pagesize=10 HTTP/1.1" 200 3645
+WARNING 2019-09-05 08:11:14,270 base 152 Not Found: /meiduo_admin/permission/groups/simple/
+WARNING 2019-09-05 08:11:14,271 basehttp 124 "GET /meiduo_admin/permission/groups/simple/ HTTP/1.1" 404 23
+WARNING 2019-09-05 08:11:14,352 base 152 Not Found: /meiduo_admin/permission/groups/simple/
+WARNING 2019-09-05 08:11:14,352 basehttp 124 "GET /meiduo_admin/permission/groups/simple/ HTTP/1.1" 404 23
+INFO 2019-09-05 08:11:14,359 basehttp 124 "GET /meiduo_admin/permission/admins/?page=1&pagesize=10 HTTP/1.1" 200 1071
+INFO 2019-09-05 08:11:14,361 basehttp 124 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 200 6785
+INFO 2019-09-05 08:11:14,392 basehttp 124 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 200 6785
+WARNING 2019-09-05 08:13:27,660 base 152 Not Found: /meiduo_admin/permission/groups/simple/
+WARNING 2019-09-05 08:13:27,661 basehttp 124 "GET /meiduo_admin/permission/groups/simple/ HTTP/1.1" 404 23
+INFO 2019-09-05 08:13:27,733 basehttp 124 "GET /meiduo_admin/permission/admins/?page=1&pagesize=10 HTTP/1.1" 200 944
+WARNING 2019-09-05 08:13:27,735 base 152 Not Found: /meiduo_admin/permission/groups/simple/
+WARNING 2019-09-05 08:13:27,735 basehttp 124 "GET /meiduo_admin/permission/groups/simple/ HTTP/1.1" 404 23
+INFO 2019-09-05 08:13:27,737 basehttp 124 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 200 6785
+INFO 2019-09-05 08:13:27,754 basehttp 124 "GET /meiduo_admin/permission/simple/ HTTP/1.1" 200 6785
