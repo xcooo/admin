@@ -30,3 +30,10 @@ class AdminSerialzier(serializers.ModelSerializer):
         user.set_password(validated_data['password'])
         user.save()
         return user
+    
+    def update(self, instance, validated_data):
+        user = super(AdminSerialzier, self).update(instance, validated_data)
+        # 密码加密
+        user.set_password(validated_data['password'])
+        user.save()
+        return user
