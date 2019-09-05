@@ -19056,3 +19056,20 @@ INFO 2019-09-05 03:23:05,466 basehttp 124 "GET /meiduo_admin/orders/?page=1&page
 INFO 2019-09-05 03:27:41,961 basehttp 124 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 975
 INFO 2019-09-05 03:27:49,249 basehttp 124 "OPTIONS /meiduo_admin/orders/?page=1&pagesize=10&keyword=20190422122652000000001 HTTP/1.1" 200 0
 INFO 2019-09-05 03:27:49,339 basehttp 124 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword=20190422122652000000001 HTTP/1.1" 200 298
+INFO 2019-09-05 03:47:21,228 basehttp 124 "OPTIONS /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 0
+INFO 2019-09-05 03:47:21,363 basehttp 124 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 975
+INFO 2019-09-05 03:47:23,667 basehttp 124 "OPTIONS /meiduo_admin/orders/20190406122652000000001/ HTTP/1.1" 200 0
+INFO 2019-09-05 03:47:23,737 basehttp 124 "GET /meiduo_admin/orders/20190406122652000000001/ HTTP/1.1" 200 676
+INFO 2019-09-05 03:47:34,152 basehttp 124 "OPTIONS /meiduo_admin/orders/20190406122652000000001/status/ HTTP/1.1" 200 0
+WARNING 2019-09-05 03:47:34,167 basehttp 124 "PUT /meiduo_admin/orders/20190406122652000000001/status/ HTTP/1.1" 405 40
+INFO 2019-09-05 03:47:54,233 basehttp 124 "OPTIONS /meiduo_admin/orders/undefined/ HTTP/1.1" 200 0
+WARNING 2019-09-05 03:47:54,447 base 152 Not Found: /meiduo_admin/orders/undefined/
+WARNING 2019-09-05 03:47:54,449 basehttp 124 "GET /meiduo_admin/orders/undefined/ HTTP/1.1" 404 23
+INFO 2019-09-05 03:47:56,601 basehttp 124 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 975
+INFO 2019-09-05 03:47:57,995 basehttp 124 "GET /meiduo_admin/orders/20190406122652000000001/ HTTP/1.1" 200 676
+INFO 2019-09-05 03:48:03,484 basehttp 124 "PUT /meiduo_admin/orders/20190406122652000000001/status/ HTTP/1.1" 200 49
+INFO 2019-09-05 03:48:03,538 basehttp 124 "GET /meiduo_admin/orders/20190406122652000000001/ HTTP/1.1" 200 676
+WARNING 2019-09-05 03:55:31,886 base 152 Not Found: /meiduo_admin/orders/undefined/
+WARNING 2019-09-05 03:55:31,888 basehttp 124 "GET /meiduo_admin/orders/undefined/ HTTP/1.1" 404 23
+INFO 2019-09-05 03:56:19,079 basehttp 124 "GET /meiduo_admin/orders/?page=1&pagesize=10&keyword= HTTP/1.1" 200 975
+INFO 2019-09-05 03:56:20,280 basehttp 124 "GET /meiduo_admin/orders/20190406122652000000001/ HTTP/1.1" 200 676
